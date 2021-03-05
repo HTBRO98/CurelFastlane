@@ -1,0 +1,6 @@
+framework module Pods_Curel {
+  umbrella header "Pods-Curel-umbrella.h"
+
+  export *
+  module * { export * }
+}
