@@ -12,6 +12,8 @@
 		4D6D3E8925F24E3000DFBB6A /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8825F24E3000DFBB6A /* Cell.swift */; };
 		4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */; };
 		4D6DA65525F46EFD00BF63B3 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA65425F46EFD00BF63B3 /* UIColorEx.swift */; };
+		4D6DA69C25F4EDFF00BF63B3 /* CurelFaslaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA69B25F4EDFF00BF63B3 /* CurelFaslaneUITests.swift */; };
+		4D6DA6A825F4EE6C00BF63B3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA6A725F4EE6C00BF63B3 /* SnapshotHelper.swift */; };
 		4DCDDEA325EF9A3600920F52 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDDEA225EF9A3600920F52 /* Model.swift */; };
 		4DCDDEAB25EF9A4800920F52 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDDEAA25EF9A4800920F52 /* ViewModel.swift */; };
 		4DCDDEB125EFC0F600920F52 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDDEB025EFC0F600920F52 /* DetailViewController.swift */; };
@@ -28,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4D6DA69E25F4EDFF00BF63B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DEC7E1125EF95B200E2AB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DEC7E1825EF95B200E2AB3F;
+			remoteInfo = Curel;
+		};
 		4DEC7E3025EF95B500E2AB3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DEC7E1125EF95B200E2AB3F /* Project object */;
@@ -53,6 +62,10 @@
 		4D6D3E8825F24E3000DFBB6A /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		4D6DA65425F46EFD00BF63B3 /* UIColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
+		4D6DA69925F4EDFF00BF63B3 /* CurelFaslaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurelFaslaneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6DA69B25F4EDFF00BF63B3 /* CurelFaslaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurelFaslaneUITests.swift; sourceTree = "<group>"; };
+		4D6DA69D25F4EDFF00BF63B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D6DA6A725F4EE6C00BF63B3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		4DCDDEA225EF9A3600920F52 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4DCDDEAA25EF9A4800920F52 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4DCDDEB025EFC0F600920F52 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +91,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D6DA69625F4EDFF00BF63B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DEC7E1625EF95B200E2AB3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +134,16 @@
 			path = Some;
 			sourceTree = "<group>";
 		};
+		4D6DA69A25F4EDFF00BF63B3 /* CurelFaslaneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DA69B25F4EDFF00BF63B3 /* CurelFaslaneUITests.swift */,
+				4D6DA6A725F4EE6C00BF63B3 /* SnapshotHelper.swift */,
+				4D6DA69D25F4EDFF00BF63B3 /* Info.plist */,
+			);
+			path = CurelFaslaneUITests;
+			sourceTree = "<group>";
+		};
 		4DCDDEA025EF9A0A00920F52 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +177,7 @@
 				4DEC7E1B25EF95B200E2AB3F /* Curel */,
 				4DEC7E3225EF95B500E2AB3F /* CurelTests */,
 				4DEC7E3D25EF95B500E2AB3F /* CurelUITests */,
+				4D6DA69A25F4EDFF00BF63B3 /* CurelFaslaneUITests */,
 				4DEC7E1A25EF95B200E2AB3F /* Products */,
 				786025FBBD54588098320153 /* Pods */,
 				B5348E13686F216CBE646DC7 /* Frameworks */,
@@ -159,6 +190,7 @@
 				4DEC7E1925EF95B200E2AB3F /* Curel.app */,
 				4DEC7E2F25EF95B500E2AB3F /* CurelTests.xctest */,
 				4DEC7E3A25EF95B500E2AB3F /* CurelUITests.xctest */,
+				4D6DA69925F4EDFF00BF63B3 /* CurelFaslaneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,6 +256,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D6DA69825F4EDFF00BF63B3 /* CurelFaslaneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D6DA6A225F4EDFF00BF63B3 /* Build configuration list for PBXNativeTarget "CurelFaslaneUITests" */;
+			buildPhases = (
+				4D6DA69525F4EDFF00BF63B3 /* Sources */,
+				4D6DA69625F4EDFF00BF63B3 /* Frameworks */,
+				4D6DA69725F4EDFF00BF63B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D6DA69F25F4EDFF00BF63B3 /* PBXTargetDependency */,
+			);
+			name = CurelFaslaneUITests;
+			productName = CurelFaslaneUITests;
+			productReference = 4D6DA69925F4EDFF00BF63B3 /* CurelFaslaneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		4DEC7E1825EF95B200E2AB3F /* Curel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DEC7E4325EF95B500E2AB3F /* Build configuration list for PBXNativeTarget "Curel" */;
@@ -291,6 +341,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					4D6DA69825F4EDFF00BF63B3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4DEC7E1825EF95B200E2AB3F;
+					};
 					4DEC7E1825EF95B200E2AB3F = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -320,11 +374,19 @@
 				4DEC7E1825EF95B200E2AB3F /* Curel */,
 				4DEC7E2E25EF95B500E2AB3F /* CurelTests */,
 				4DEC7E3925EF95B500E2AB3F /* CurelUITests */,
+				4D6DA69825F4EDFF00BF63B3 /* CurelFaslaneUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D6DA69725F4EDFF00BF63B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DEC7E1725EF95B200E2AB3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,6 +518,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D6DA69525F4EDFF00BF63B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6DA69C25F4EDFF00BF63B3 /* CurelFaslaneUITests.swift in Sources */,
+				4D6DA6A825F4EE6C00BF63B3 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DEC7E1525EF95B200E2AB3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,6 +562,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D6DA69F25F4EDFF00BF63B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DEC7E1825EF95B200E2AB3F /* Curel */;
+			targetProxy = 4D6DA69E25F4EDFF00BF63B3 /* PBXContainerItemProxy */;
+		};
 		4DEC7E3125EF95B500E2AB3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DEC7E1825EF95B200E2AB3F /* Curel */;
@@ -523,6 +599,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4D6DA6A025F4EDFF00BF63B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYH32YS72C;
+				INFOPLIST_FILE = CurelFaslaneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.CurelFaslaneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Curel;
+			};
+			name = Debug;
+		};
+		4D6DA6A125F4EDFF00BF63B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYH32YS72C;
+				INFOPLIST_FILE = CurelFaslaneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.CurelFaslaneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Curel;
+			};
+			name = Release;
+		};
 		4DEC7E4125EF95B500E2AB3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -770,6 +884,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D6DA6A225F4EDFF00BF63B3 /* Build configuration list for PBXNativeTarget "CurelFaslaneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D6DA6A025F4EDFF00BF63B3 /* Debug */,
+				4D6DA6A125F4EDFF00BF63B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4DEC7E1425EF95B200E2AB3F /* Build configuration list for PBXProject "Curel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

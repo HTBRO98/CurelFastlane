@@ -1,0 +1,1 @@
+Curel is the simple weather app which you can see weekly forecast at Tokyo. This app connects with the open weather API by the internet.

@@ -19,6 +19,8 @@ import PKHUD
  
     Autolaytout
     faltlane
+    →snapshotsをとる時は、UITestにはSnapshot("スナップショット名")とmage schemeにUItestを新たに入れてtestとrunとshared等にチェックを入れる。uitestにレコードしておく
+    →bundle exec fastlane screenshotではなく、fastlane screenshotsだと上手く行った
     figma
     */
 

@@ -6,8 +6,38 @@
 	<dict>
 		<key>Curel.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>8</integer>
+		</dict>
+		<key>CurelFaslaneUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4D6DA69825F4EDFF00BF63B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DEC7E1825EF95B200E2AB3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DEC7E2E25EF95B500E2AB3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DEC7E3925EF95B500E2AB3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
