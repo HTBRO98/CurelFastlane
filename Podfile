@@ -7,6 +7,8 @@ target 'Curel' do
 
   pod 'Alamofire', '~> 5.2'
   pod 'Kingfisher', '~> 6.0'
+  pod 'AlamofireImage', '~> 4.1'
+  pod 'PKHUD', '~> 5.0'
 
   # Pods for Curel
 
