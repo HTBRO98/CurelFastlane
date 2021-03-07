@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		08FA34DE7232FDBF96CF3A71 /* Pods_Curel_CurelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DC7E32BED9D473DD09F9CF /* Pods_Curel_CurelUITests.framework */; };
 		4D63942225F1A5FB00D1C715 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63942125F1A5FB00D1C715 /* Notification.swift */; };
+		4D6D3E8925F24E3000DFBB6A /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8825F24E3000DFBB6A /* Cell.swift */; };
+		4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */; };
+		4D6DA65525F46EFD00BF63B3 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA65425F46EFD00BF63B3 /* UIColorEx.swift */; };
 		4DCDDEA325EF9A3600920F52 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDDEA225EF9A3600920F52 /* Model.swift */; };
 		4DCDDEAB25EF9A4800920F52 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDDEAA25EF9A4800920F52 /* ViewModel.swift */; };
 		4DCDDEB125EFC0F600920F52 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDDEB025EFC0F600920F52 /* DetailViewController.swift */; };
@@ -47,6 +50,9 @@
 		3F960C62553D972BA251EDDD /* Pods-Curel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.debug.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.debug.xcconfig"; sourceTree = "<group>"; };
 		44DC7E32BED9D473DD09F9CF /* Pods_Curel_CurelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Curel_CurelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D63942125F1A5FB00D1C715 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		4D6D3E8825F24E3000DFBB6A /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		4D6DA65425F46EFD00BF63B3 /* UIColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
 		4DCDDEA225EF9A3600920F52 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4DCDDEAA25EF9A4800920F52 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4DCDDEB025EFC0F600920F52 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				4D63942125F1A5FB00D1C715 /* Notification.swift */,
+				4D6DA65425F46EFD00BF63B3 /* UIColorEx.swift */,
 			);
 			path = Some;
 			sourceTree = "<group>";
@@ -128,6 +135,8 @@
 			children = (
 				4DEC7E2025EF95B200E2AB3F /* ViewController.swift */,
 				4DCDDEB025EFC0F600920F52 /* DetailViewController.swift */,
+				4D6D3E8825F24E3000DFBB6A /* Cell.swift */,
+				4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -321,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DEC7E2925EF95B500E2AB3F /* LaunchScreen.storyboard in Resources */,
+				4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */,
 				4DEC7E2625EF95B500E2AB3F /* Assets.xcassets in Resources */,
 				4DEC7E2425EF95B200E2AB3F /* Main.storyboard in Resources */,
 			);
@@ -453,8 +463,10 @@
 				4DCDDEAB25EF9A4800920F52 /* ViewModel.swift in Sources */,
 				4DEC7E2125EF95B200E2AB3F /* ViewController.swift in Sources */,
 				4DEC7E1D25EF95B200E2AB3F /* AppDelegate.swift in Sources */,
+				4D6DA65525F46EFD00BF63B3 /* UIColorEx.swift in Sources */,
 				4D63942225F1A5FB00D1C715 /* Notification.swift in Sources */,
 				4DCDDEB125EFC0F600920F52 /* DetailViewController.swift in Sources */,
+				4D6D3E8925F24E3000DFBB6A /* Cell.swift in Sources */,
 				4DEC7E1F25EF95B200E2AB3F /* SceneDelegate.swift in Sources */,
 				4DCDDEA325EF9A3600920F52 /* Model.swift in Sources */,
 			);
