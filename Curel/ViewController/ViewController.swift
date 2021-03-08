@@ -21,6 +21,8 @@ import PKHUD
     faltlane
     →snapshotsをとる時は、UITestにはSnapshot("スナップショット名")とmage schemeにUItestを新たに入れてtestとrunとshared等にチェックを入れる。uitestにレコードしておく
     →bundle exec fastlane screenshotではなく、fastlane screenshotsだと上手く行った
+    →gymの時にbuild settings versioning current project version 1にする version systemをappleGenericにする　bundle exec fastlane buildでいける
+    →screenshotsの写真サイズがappleのデフォルトサイズと変わってしまったので、パッケージ2.176.0だと上手くいかないので、2.177.0がリリースされるのを待つ。
     figma
     */
 

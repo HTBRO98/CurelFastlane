@@ -26,6 +26,16 @@ Description of what the lane does
 fastlane ios screenshots
 ```
 Take screenshots
+### ios build
+```
+fastlane ios build
+```
+Create ipa
+### ios upload
+```
+fastlane ios upload
+```
+Upload to App Store
 
 ----
 
