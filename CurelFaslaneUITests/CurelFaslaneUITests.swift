@@ -14,7 +14,6 @@ class CurelFaslaneUITests: XCTestCase {
         let app = XCUIApplication()
         setupSnapshot(app)
         app.launch()
-        
         snapshot("01LoginScreen")
         
 //        // 2

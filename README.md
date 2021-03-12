@@ -1,4 +1,5 @@
 #  <font color="Red">Curel README</font>
+![ソースコードサイズ](https://img.shields.io/github/last-commit/HTBRO98/CurelFastlane)
 ## **Autolayout**
 * plain Autolayout
 * Coding
