@@ -24,6 +24,9 @@ import PKHUD
     →gymの時にbuild settings versioning current project version 1にする version systemをappleGenericにする　bundle exec fastlane buildでいける
     →screenshotsの写真サイズがappleのデフォルトサイズと変わってしまったので、パッケージ2.176.0だと上手くいかないので、2.177.0がリリースされるのを待つ。
     figma
+ 
+    bitrise
+    workflowでSlackを追加（iOSではなく、All）→VariableにSlkack WEBhook URLを追加。variableには少し時間がかかる。
     */
 
 class ViewController: UIViewController , UITableViewDelegate {

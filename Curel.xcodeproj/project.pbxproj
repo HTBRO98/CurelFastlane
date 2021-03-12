@@ -83,6 +83,7 @@
 		4DEC7E3A25EF95B500E2AB3F /* CurelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEC7E3E25EF95B500E2AB3F /* CurelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurelUITests.swift; sourceTree = "<group>"; };
 		4DEC7E4025EF95B500E2AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DFBA21A25FB9357001B4889 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7D420D2E3D648E9754B661DA /* Pods_CurelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		819EED1D080212A37A1A8BEA /* Pods-Curel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.release.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.release.xcconfig"; sourceTree = "<group>"; };
 		B53B7F948A388B7CF3660595 /* Pods-CurelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.release.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 		4DEC7E1025EF95B200E2AB3F = {
 			isa = PBXGroup;
 			children = (
+				4DFBA21A25FB9357001B4889 /* README.md */,
 				4DEC7E1B25EF95B200E2AB3F /* Curel */,
 				4DEC7E3225EF95B500E2AB3F /* CurelTests */,
 				4DEC7E3D25EF95B500E2AB3F /* CurelUITests */,
