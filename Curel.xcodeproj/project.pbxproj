@@ -14,9 +14,22 @@
 		4D6DA65525F46EFD00BF63B3 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA65425F46EFD00BF63B3 /* UIColorEx.swift */; };
 		4D6DA69C25F4EDFF00BF63B3 /* CurelFaslaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA69B25F4EDFF00BF63B3 /* CurelFaslaneUITests.swift */; };
 		4D6DA6A825F4EE6C00BF63B3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DA6A725F4EE6C00BF63B3 /* SnapshotHelper.swift */; };
+		4DC88BCF2647EFDA00343C5C /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC88BCE2647EFDA00343C5C /* RowController.swift */; };
+		4DC88BD82647F2E800343C5C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC88BD72647F2E800343C5C /* Model.swift */; };
+		4DC88BE82647F33000343C5C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC88BE72647F33000343C5C /* Notification.swift */; };
+		4DC88BF72647F36400343C5C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC88BF62647F36400343C5C /* ViewModel.swift */; };
 		4DCDDEA325EF9A3600920F52 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDDEA225EF9A3600920F52 /* Model.swift */; };
 		4DCDDEAB25EF9A4800920F52 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDDEAA25EF9A4800920F52 /* ViewModel.swift */; };
 		4DCDDEB125EFC0F600920F52 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDDEB025EFC0F600920F52 /* DetailViewController.swift */; };
+		4DDE921A260330410028D97E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDE9218260330410028D97E /* Interface.storyboard */; };
+		4DDE921C260330460028D97E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDE921B260330460028D97E /* Assets.xcassets */; };
+		4DDE9223260330460028D97E /* CurelWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DDE9222260330460028D97E /* CurelWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DDE9228260330460028D97E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE9227260330460028D97E /* InterfaceController.swift */; };
+		4DDE922A260330460028D97E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE9229260330460028D97E /* ExtensionDelegate.swift */; };
+		4DDE922C260330460028D97E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE922B260330460028D97E /* NotificationController.swift */; };
+		4DDE922E260330460028D97E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE922D260330460028D97E /* ComplicationController.swift */; };
+		4DDE9230260330490028D97E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDE922F260330490028D97E /* Assets.xcassets */; };
+		4DDE9235260330490028D97E /* CurelWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4DDE9216260330410028D97E /* CurelWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4DEC7E1D25EF95B200E2AB3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC7E1C25EF95B200E2AB3F /* AppDelegate.swift */; };
 		4DEC7E1F25EF95B200E2AB3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC7E1E25EF95B200E2AB3F /* SceneDelegate.swift */; };
 		4DEC7E2125EF95B200E2AB3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC7E2025EF95B200E2AB3F /* ViewController.swift */; };
@@ -37,6 +50,20 @@
 			remoteGlobalIDString = 4DEC7E1825EF95B200E2AB3F;
 			remoteInfo = Curel;
 		};
+		4DDE9224260330460028D97E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DEC7E1125EF95B200E2AB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDE9221260330460028D97E;
+			remoteInfo = "CurelWatch Extension";
+		};
+		4DDE9233260330490028D97E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DEC7E1125EF95B200E2AB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDE9215260330410028D97E;
+			remoteInfo = CurelWatch;
+		};
 		4DEC7E3025EF95B500E2AB3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DEC7E1125EF95B200E2AB3F /* Project object */;
@@ -53,6 +80,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4DDE9236260330490028D97E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4DDE9235260330490028D97E /* CurelWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDE9239260330490028D97E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4DDE9223260330460028D97E /* CurelWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3692F98389D769889DBEFADE /* Pods_Curel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Curel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B205581CA92F22C28D27CF /* Pods-Curel-CurelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.release.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,9 +118,25 @@
 		4D6DA69B25F4EDFF00BF63B3 /* CurelFaslaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurelFaslaneUITests.swift; sourceTree = "<group>"; };
 		4D6DA69D25F4EDFF00BF63B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D6DA6A725F4EE6C00BF63B3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		4DC88BCE2647EFDA00343C5C /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		4DC88BD72647F2E800343C5C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4DC88BE72647F33000343C5C /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		4DC88BF62647F36400343C5C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4DCDDEA225EF9A3600920F52 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4DCDDEAA25EF9A4800920F52 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4DCDDEB025EFC0F600920F52 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4DDE9216260330410028D97E /* CurelWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurelWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDE9219260330410028D97E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4DDE921B260330460028D97E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DDE921D260330460028D97E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDE9222260330460028D97E /* CurelWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CurelWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDE9227260330460028D97E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4DDE9229260330460028D97E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4DDE922B260330460028D97E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4DDE922D260330460028D97E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		4DDE922F260330490028D97E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DDE9231260330490028D97E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDE9232260330490028D97E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		4DEC7E1925EF95B200E2AB3F /* Curel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEC7E1C25EF95B200E2AB3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DEC7E1E25EF95B200E2AB3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +161,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		4D6DA69625F4EDFF00BF63B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDE921F260330460028D97E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,6 +220,30 @@
 			path = CurelFaslaneUITests;
 			sourceTree = "<group>";
 		};
+		4DC88BD62647F2CC00343C5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DC88BD72647F2E800343C5C /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DC88BE52647F31700343C5C /* Some */ = {
+			isa = PBXGroup;
+			children = (
+				4DC88BE72647F33000343C5C /* Notification.swift */,
+			);
+			path = Some;
+			sourceTree = "<group>";
+		};
+		4DC88BF52647F35400343C5C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DC88BF62647F36400343C5C /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4DCDDEA025EF9A0A00920F52 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +271,34 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		4DDE9217260330410028D97E /* CurelWatch */ = {
+			isa = PBXGroup;
+			children = (
+				4DDE9218260330410028D97E /* Interface.storyboard */,
+				4DDE921B260330460028D97E /* Assets.xcassets */,
+				4DDE921D260330460028D97E /* Info.plist */,
+			);
+			path = CurelWatch;
+			sourceTree = "<group>";
+		};
+		4DDE9226260330460028D97E /* CurelWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4DDE9227260330460028D97E /* InterfaceController.swift */,
+				4DC88BCE2647EFDA00343C5C /* RowController.swift */,
+				4DDE9229260330460028D97E /* ExtensionDelegate.swift */,
+				4DDE922B260330460028D97E /* NotificationController.swift */,
+				4DDE922D260330460028D97E /* ComplicationController.swift */,
+				4DC88BF52647F35400343C5C /* ViewModel */,
+				4DC88BE52647F31700343C5C /* Some */,
+				4DC88BD62647F2CC00343C5C /* Model */,
+				4DDE922F260330490028D97E /* Assets.xcassets */,
+				4DDE9231260330490028D97E /* Info.plist */,
+				4DDE9232260330490028D97E /* PushNotificationPayload.apns */,
+			);
+			path = "CurelWatch Extension";
+			sourceTree = "<group>";
+		};
 		4DEC7E1025EF95B200E2AB3F = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +307,8 @@
 				4DEC7E3225EF95B500E2AB3F /* CurelTests */,
 				4DEC7E3D25EF95B500E2AB3F /* CurelUITests */,
 				4D6DA69A25F4EDFF00BF63B3 /* CurelFaslaneUITests */,
+				4DDE9217260330410028D97E /* CurelWatch */,
+				4DDE9226260330460028D97E /* CurelWatch Extension */,
 				4DEC7E1A25EF95B200E2AB3F /* Products */,
 				786025FBBD54588098320153 /* Pods */,
 				B5348E13686F216CBE646DC7 /* Frameworks */,
@@ -193,6 +322,8 @@
 				4DEC7E2F25EF95B500E2AB3F /* CurelTests.xctest */,
 				4DEC7E3A25EF95B500E2AB3F /* CurelUITests.xctest */,
 				4D6DA69925F4EDFF00BF63B3 /* CurelFaslaneUITests.xctest */,
+				4DDE9216260330410028D97E /* CurelWatch.app */,
+				4DDE9222260330460028D97E /* CurelWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,6 +407,40 @@
 			productReference = 4D6DA69925F4EDFF00BF63B3 /* CurelFaslaneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4DDE9215260330410028D97E /* CurelWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDE923D260330490028D97E /* Build configuration list for PBXNativeTarget "CurelWatch" */;
+			buildPhases = (
+				4DDE9214260330410028D97E /* Resources */,
+				4DDE9239260330490028D97E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDE9225260330460028D97E /* PBXTargetDependency */,
+			);
+			name = CurelWatch;
+			productName = CurelWatch;
+			productReference = 4DDE9216260330410028D97E /* CurelWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4DDE9221260330460028D97E /* CurelWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDE923C260330490028D97E /* Build configuration list for PBXNativeTarget "CurelWatch Extension" */;
+			buildPhases = (
+				4DDE921E260330460028D97E /* Sources */,
+				4DDE921F260330460028D97E /* Frameworks */,
+				4DDE9220260330460028D97E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CurelWatch Extension";
+			productName = "CurelWatch Extension";
+			productReference = 4DDE9222260330460028D97E /* CurelWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		4DEC7E1825EF95B200E2AB3F /* Curel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DEC7E4325EF95B500E2AB3F /* Build configuration list for PBXNativeTarget "Curel" */;
@@ -285,10 +450,12 @@
 				4DEC7E1625EF95B200E2AB3F /* Frameworks */,
 				4DEC7E1725EF95B200E2AB3F /* Resources */,
 				49B48D2B8808298EC315727A /* [CP] Embed Pods Frameworks */,
+				4DDE9236260330490028D97E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4DDE9234260330490028D97E /* PBXTargetDependency */,
 			);
 			name = Curel;
 			productName = Curel;
@@ -348,6 +515,12 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4DEC7E1825EF95B200E2AB3F;
 					};
+					4DDE9215260330410028D97E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4DDE9221260330460028D97E = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					4DEC7E1825EF95B200E2AB3F = {
 						CreatedOnToolsVersion = 12.4;
 						ProvisioningStyle = Automatic;
@@ -381,6 +554,8 @@
 				4DEC7E2E25EF95B500E2AB3F /* CurelTests */,
 				4DEC7E3925EF95B500E2AB3F /* CurelUITests */,
 				4D6DA69825F4EDFF00BF63B3 /* CurelFaslaneUITests */,
+				4DDE9215260330410028D97E /* CurelWatch */,
+				4DDE9221260330460028D97E /* CurelWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -390,6 +565,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDE9214260330410028D97E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDE921C260330460028D97E /* Assets.xcassets in Resources */,
+				4DDE921A260330410028D97E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDE9220260330460028D97E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDE9230260330490028D97E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +725,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DDE921E260330460028D97E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC88BCF2647EFDA00343C5C /* RowController.swift in Sources */,
+				4DDE922C260330460028D97E /* NotificationController.swift in Sources */,
+				4DDE922E260330460028D97E /* ComplicationController.swift in Sources */,
+				4DC88BE82647F33000343C5C /* Notification.swift in Sources */,
+				4DC88BD82647F2E800343C5C /* Model.swift in Sources */,
+				4DDE922A260330460028D97E /* ExtensionDelegate.swift in Sources */,
+				4DC88BF72647F36400343C5C /* ViewModel.swift in Sources */,
+				4DDE9228260330460028D97E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DEC7E1525EF95B200E2AB3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,6 +780,16 @@
 			target = 4DEC7E1825EF95B200E2AB3F /* Curel */;
 			targetProxy = 4D6DA69E25F4EDFF00BF63B3 /* PBXContainerItemProxy */;
 		};
+		4DDE9225260330460028D97E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDE9221260330460028D97E /* CurelWatch Extension */;
+			targetProxy = 4DDE9224260330460028D97E /* PBXContainerItemProxy */;
+		};
+		4DDE9234260330490028D97E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDE9215260330410028D97E /* CurelWatch */;
+			targetProxy = 4DDE9233260330490028D97E /* PBXContainerItemProxy */;
+		};
 		4DEC7E3125EF95B500E2AB3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DEC7E1825EF95B200E2AB3F /* Curel */;
@@ -586,6 +803,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4DDE9218260330410028D97E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDE9219260330410028D97E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		4DEC7E2225EF95B200E2AB3F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -640,6 +865,90 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Curel;
+			};
+			name = Release;
+		};
+		4DDE9237260330490028D97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYH32YS72C;
+				IBSC_MODULE = CurelWatch_Extension;
+				INFOPLIST_FILE = CurelWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		4DDE9238260330490028D97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYH32YS72C;
+				IBSC_MODULE = CurelWatch_Extension;
+				INFOPLIST_FILE = CurelWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		4DDE923A260330490028D97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYH32YS72C;
+				INFOPLIST_FILE = "CurelWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		4DDE923B260330490028D97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYH32YS72C;
+				INFOPLIST_FILE = "CurelWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
 			};
 			name = Release;
 		};
@@ -899,6 +1208,24 @@
 			buildConfigurations = (
 				4D6DA6A025F4EDFF00BF63B3 /* Debug */,
 				4D6DA6A125F4EDFF00BF63B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDE923C260330490028D97E /* Build configuration list for PBXNativeTarget "CurelWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDE923A260330490028D97E /* Debug */,
+				4DDE923B260330490028D97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDE923D260330490028D97E /* Build configuration list for PBXNativeTarget "CurelWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDE9237260330490028D97E /* Debug */,
+				4DDE9238260330490028D97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

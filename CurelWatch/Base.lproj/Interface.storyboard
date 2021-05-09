@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="PcT-of-bcr">
+            <objects>
+                <controller id="tUO-h7-Y7W">
+                    <items>
+                        <label height="20" alignment="left" text="テスト" id="1g5-yR-mbc"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="45"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CurelWatch" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="26" alignment="left" title="天気を確認する" id="S0z-Bk-ZdE">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="buttan" destination="AgC-eL-Hgc" id="80y-0R-2Ai"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="36" alignment="left" text="文字が入力されていません。" numberOfLines="3" id="uOL-1R-azv"/>
+                        <table alignment="left" id="GXL-FT-95n">
+                            <items>
+                                <tableRow id="AzC-eL-lVr" customClass="RowController" customModule="CurelWatch_Extension">
+                                    <group key="rootItem" width="1" height="44" alignment="left" id="OSK-rR-8Cy">
+                                        <items>
+                                            <separator height="53" alignment="left" id="hIt-EI-TJH">
+                                                <color key="color" red="0.18253089559999999" green="0.80028553300000005" blue="0.47848897239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </separator>
+                                            <group width="72" height="42" alignment="left" layout="vertical" id="YEu-aC-0GW">
+                                                <items>
+                                                    <group width="68" alignment="left" id="aOu-Jz-eiS">
+                                                        <items>
+                                                            <label width="42" alignment="center" verticalAlignment="center" text="日付" textAlignment="center" id="Z3F-ZK-EqX"/>
+                                                        </items>
+                                                    </group>
+                                                    <group width="69" alignment="left" id="9MS-nr-EOA">
+                                                        <items>
+                                                            <label width="40" height="19" alignment="center" verticalAlignment="center" text="都市" textAlignment="center" id="5aS-aX-Y3L"/>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <group width="35" height="39" alignment="center" verticalAlignment="center" layout="vertical" id="Ocb-dF-Uft">
+                                                <items>
+                                                    <imageView width="37" height="35" alignment="left" verticalAlignment="center" image="sun.min" catalog="system" id="4Hu-XD-fVb">
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="CityLabel" destination="5aS-aX-Y3L" id="GDL-Sr-7Mt"/>
+                                        <outlet property="dateLabel" destination="Z3F-ZK-EqX" id="nY9-T6-fHe"/>
+                                        <outlet property="image" destination="4Hu-XD-fVb" id="q3u-Ud-Dld"/>
+                                        <segue destination="tUO-h7-Y7W" kind="push" id="UWP-HZ-dxl"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="uOL-1R-azv" id="tmi-z0-9tf"/>
+                        <outlet property="table" destination="GXL-FT-95n" id="YlM-SW-hxL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="CUREL" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="CurelWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="CurelWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sun.min" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
