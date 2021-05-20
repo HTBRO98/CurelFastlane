@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08FA34DE7232FDBF96CF3A71 /* Pods_Curel_CurelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DC7E32BED9D473DD09F9CF /* Pods_Curel_CurelUITests.framework */; };
+		40563C6713DCCCAF2732FD19 /* Pods_CurelWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF6B287C9521516DFE57511 /* Pods_CurelWatch_Extension.framework */; };
 		4D63942225F1A5FB00D1C715 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63942125F1A5FB00D1C715 /* Notification.swift */; };
 		4D6D3E8925F24E3000DFBB6A /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8825F24E3000DFBB6A /* Cell.swift */; };
 		4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */; };
@@ -106,6 +107,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		228DD8971AA24DA12F883660 /* Pods-CurelWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.release.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		3692F98389D769889DBEFADE /* Pods_Curel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Curel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B205581CA92F22C28D27CF /* Pods-Curel-CurelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.release.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3F960C62553D972BA251EDDD /* Pods-Curel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.debug.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,8 @@
 		4DEC7E3E25EF95B500E2AB3F /* CurelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurelUITests.swift; sourceTree = "<group>"; };
 		4DEC7E4025EF95B500E2AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DFBA21A25FB9357001B4889 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6F153EFC8B273DAEDD7CFB1E /* Pods-CurelWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.debug.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		6FF6B287C9521516DFE57511 /* Pods_CurelWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurelWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D420D2E3D648E9754B661DA /* Pods_CurelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		819EED1D080212A37A1A8BEA /* Pods-Curel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.release.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.release.xcconfig"; sourceTree = "<group>"; };
 		B53B7F948A388B7CF3660595 /* Pods-CurelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.release.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40563C6713DCCCAF2732FD19 /* Pods_CurelWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +200,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				08FA34DE7232FDBF96CF3A71 /* Pods_Curel_CurelUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB3F2273446E1D9976C97AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +384,8 @@
 				39B205581CA92F22C28D27CF /* Pods-Curel-CurelUITests.release.xcconfig */,
 				BE13D7DC4537E5942129A635 /* Pods-CurelTests.debug.xcconfig */,
 				B53B7F948A388B7CF3660595 /* Pods-CurelTests.release.xcconfig */,
+				6F153EFC8B273DAEDD7CFB1E /* Pods-CurelWatch Extension.debug.xcconfig */,
+				228DD8971AA24DA12F883660 /* Pods-CurelWatch Extension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -382,6 +396,7 @@
 				3692F98389D769889DBEFADE /* Pods_Curel.framework */,
 				44DC7E32BED9D473DD09F9CF /* Pods_Curel_CurelUITests.framework */,
 				7D420D2E3D648E9754B661DA /* Pods_CurelTests.framework */,
+				6FF6B287C9521516DFE57511 /* Pods_CurelWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -413,6 +428,7 @@
 			buildPhases = (
 				4DDE9214260330410028D97E /* Resources */,
 				4DDE9239260330490028D97E /* Embed App Extensions */,
+				8EB3F2273446E1D9976C97AD /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -428,9 +444,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DDE923C260330490028D97E /* Build configuration list for PBXNativeTarget "CurelWatch Extension" */;
 			buildPhases = (
+				88F427A23F39CE6B8785E8FA /* [CP] Check Pods Manifest.lock */,
 				4DDE921E260330460028D97E /* Sources */,
 				4DDE921F260330460028D97E /* Frameworks */,
 				4DDE9220260330460028D97E /* Resources */,
+				A02CB49E07F39CFF1DA6CABA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -628,6 +646,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Curel/Pods-Curel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F427A23F39CE6B8785E8FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CurelWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A02CB49E07F39CFF1DA6CABA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A8BE49DED9F93A54352A7862 /* [CP] Check Pods Manifest.lock */ = {
@@ -910,6 +967,7 @@
 		};
 		4DDE923A260330490028D97E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F153EFC8B273DAEDD7CFB1E /* Pods-CurelWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -932,6 +990,7 @@
 		};
 		4DDE923B260330490028D97E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 228DD8971AA24DA12F883660 /* Pods-CurelWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;

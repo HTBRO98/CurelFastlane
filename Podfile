@@ -21,4 +21,12 @@ target 'Curel' do
     # Pods for testing
   end
 
+  target 'CurelWatch Extension' do
+    platform :watchos, '7.2'
+    pod 'Alamofire', '~> 5.2'
+    pod 'AlamofireImage', '~> 4.1'
+    
+    # shared_pods 
+  end
+
 end
