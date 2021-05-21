@@ -54,7 +54,7 @@
                                             </group>
                                             <group width="35" height="39" alignment="center" verticalAlignment="center" layout="vertical" id="Ocb-dF-Uft">
                                                 <items>
-                                                    <imageView width="37" height="35" alignment="left" verticalAlignment="center" image="sun.min" catalog="system" id="4Hu-XD-fVb">
+                                                    <imageView width="37" height="35" alignment="left" verticalAlignment="center" image="sun.min" catalog="system" id="4Hu-XD-fVb" userLabel="imageView">
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                 </items>

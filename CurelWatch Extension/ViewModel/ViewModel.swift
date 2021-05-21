@@ -5,6 +5,8 @@
 //  Created by HAYATOYAMAMOTo on 2021/05/09.
 //
 
+import WatchKit
+import UIKit
 import Foundation
 import Alamofire
 import AlamofireImage
@@ -51,6 +53,8 @@ class FetchProvider {
     func fetchIconAPI(iPath:String, imageview: UIImageView, placeHolderImage: UIImage) {
         let iUrl = "https://openweathermap.org/img/wn/\(iPath)@2x.png"
         guard let url = URL(string: iUrl) else { return }
+        var watchImageView: WKInterfaceImage?
+        
         imageview.af.setImage(withURL: url,
                                       placeholderImage: placeHolderImage,
                                       imageTransition: .crossDissolve(0.3))
