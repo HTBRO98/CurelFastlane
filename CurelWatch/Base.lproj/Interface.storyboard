@@ -22,13 +22,6 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CurelWatch" customModuleProvider="target">
                     <items>
-                        <button width="1" height="26" alignment="left" title="天気を確認する" id="S0z-Bk-ZdE">
-                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="buttan" destination="AgC-eL-Hgc" id="80y-0R-2Ai"/>
-                            </connections>
-                        </button>
                         <label width="136" height="36" alignment="left" text="文字が入力されていません。" numberOfLines="3" id="uOL-1R-azv"/>
                         <table alignment="left" id="GXL-FT-95n">
                             <items>
@@ -64,7 +57,7 @@
                                     <connections>
                                         <outlet property="CityLabel" destination="5aS-aX-Y3L" id="GDL-Sr-7Mt"/>
                                         <outlet property="dateLabel" destination="Z3F-ZK-EqX" id="nY9-T6-fHe"/>
-                                        <outlet property="image" destination="4Hu-XD-fVb" id="q3u-Ud-Dld"/>
+                                        <outlet property="imageView" destination="4Hu-XD-fVb" id="MJo-aV-wRW"/>
                                         <segue destination="tUO-h7-Y7W" kind="push" id="UWP-HZ-dxl"/>
                                     </connections>
                                 </tableRow>

@@ -16,11 +16,7 @@ class InterfaceController: WKInterfaceController {
     let model = Model()
     
     @IBOutlet weak var table: WKInterfaceTable!
-    
-    @IBAction func buttan() {
         
-    }
-    
     @IBOutlet weak var label: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
@@ -45,12 +41,21 @@ class InterfaceController: WKInterfaceController {
             controller.data = (model.dataList[i], i)
         }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(update(_notification: Notification)), name: .WeatherNotification, object: nil)
+        
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
     }
     
-    
+    @objc func update(_ notification: Notification) {
+        print("tableviewのデータをリロードします。")
+        for i in 0 ..< table.numberOfRows {
+            guard let controller = table.rowController(at: i) as? RowController else { continue }
+            
+            controller.data = (model.dataList[i], i)
+        }
+    }
 
 }

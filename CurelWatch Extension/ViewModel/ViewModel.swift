@@ -43,21 +43,21 @@ class FetchProvider {
         guard let data = data else { return }
         do {
             let data = try JSONDecoder().decode(Forecast.self, from: data)
-            print("jDecode: \(data)")
+            //print("jDecode: \(data)")
             model.dataList.append(data)
         } catch let error {
             print("jDecode error: \(error)")
         }
     }
     
-    func fetchIconAPI(iPath:String, imageview: UIImageView, placeHolderImage: UIImage) {
-        let iUrl = "https://openweathermap.org/img/wn/\(iPath)@2x.png"
-        guard let url = URL(string: iUrl) else { return }
-        var watchImageView: WKInterfaceImage?
-        
-        imageview.af.setImage(withURL: url,
-                                      placeholderImage: placeHolderImage,
-                                      imageTransition: .crossDissolve(0.3))
+    func fetchIconAPI(iPath:String, imageview: WKInterfaceImage, placeHolderImage: UIImage) {
+//        let iUrl = "https://openweathermap.org/img/wn/\(iPath)@2x.png"
+//        guard let url = URL(string: iUrl) else { return }
+        let image = UIImage(named: "noalpha.appicon_120")!
+        imageview.setImage(image)
+//        imageview.af.setImage(withURL: url,
+//                                      placeholderImage: placeHolderImage,
+//                                      imageTransition: .crossDissolve(0.3))
     }
     
 }
