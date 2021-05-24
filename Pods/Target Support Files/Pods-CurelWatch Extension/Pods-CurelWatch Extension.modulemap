@@ -1,0 +1,6 @@
+framework module Pods_CurelWatch_Extension {
+  umbrella header "Pods-CurelWatch Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
