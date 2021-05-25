@@ -115,7 +115,7 @@ struct WeatherData: Codable {
 }
 
 class Model {
-    let apiKey: String = "cdc976a8dbd650139d902d1369ac8840"
+    let apiKey: String = ""
     
     var dataList : [Forecast] = [] {
         
