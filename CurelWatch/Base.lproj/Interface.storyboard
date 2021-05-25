@@ -25,7 +25,7 @@
                         <label width="136" height="36" alignment="left" text="文字が入力されていません。" numberOfLines="3" id="uOL-1R-azv"/>
                         <table alignment="left" id="GXL-FT-95n">
                             <items>
-                                <tableRow id="AzC-eL-lVr" customClass="RowController" customModule="CurelWatch_Extension">
+                                <tableRow identifier="Row" id="AzC-eL-lVr" customClass="RowController" customModule="CurelWatch_Extension">
                                     <group key="rootItem" width="1" height="44" alignment="left" id="OSK-rR-8Cy">
                                         <items>
                                             <separator height="53" alignment="left" id="hIt-EI-TJH">

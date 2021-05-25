@@ -32,16 +32,15 @@ class InterfaceController: WKInterfaceController {
             model.dataList.removeAll()
             fetchProvider.fetchAPI(search: query, model: model)
         }
-        
+                
         table.setNumberOfRows(model.dataList.count, withRowType: "Row")
         
         for i in 0 ..< table.numberOfRows {
             guard let controller = table.rowController(at: i) as? RowController else { continue }
-            
             controller.data = (model.dataList[i], i)
         }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(update(_notification: Notification)), name: .WeatherNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(update(_notification: Notification)), name: .WeatherNotification, object: nil)
         
     }
     
