@@ -117,10 +117,15 @@ struct WeatherData: Codable {
 class Model {
     let apiKey: String = ""
     
+    var delegate: NotifySetDataDelegate?
+    
     var dataList : [Forecast] = [] {
         
         didSet {
-            NotificationCenter.default.post(name: .WeatherNotification, object: nil)
+//            NotificationCenter.default.post(name: .WeatherNotification, object: nil)
+            delegate?.setModel()
+            //delegateを入れる？
+            
         }
     }
 }
