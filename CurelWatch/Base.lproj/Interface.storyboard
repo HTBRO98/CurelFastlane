@@ -35,12 +35,16 @@
                                                 <items>
                                                     <group width="68" alignment="left" id="aOu-Jz-eiS">
                                                         <items>
-                                                            <label width="42" alignment="center" verticalAlignment="center" text="日付" textAlignment="center" id="Z3F-ZK-EqX"/>
+                                                            <label width="42" alignment="center" verticalAlignment="center" text="日付" textAlignment="center" minimumScaleFactor="0.5" id="Z3F-ZK-EqX">
+                                                                <color key="textColor" red="0.18253089559999999" green="0.80028553300000005" blue="0.47848897239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </label>
                                                         </items>
                                                     </group>
                                                     <group width="69" alignment="left" id="9MS-nr-EOA">
                                                         <items>
-                                                            <label width="40" height="19" alignment="center" verticalAlignment="center" text="都市" textAlignment="center" id="5aS-aX-Y3L"/>
+                                                            <label width="40" height="19" alignment="center" verticalAlignment="center" text="都市" textAlignment="center" minimumScaleFactor="0.5" id="5aS-aX-Y3L">
+                                                                <color key="textColor" red="0.51508518640000001" green="0.3709322793" blue="0.1291416279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </label>
                                                         </items>
                                                     </group>
                                                 </items>
