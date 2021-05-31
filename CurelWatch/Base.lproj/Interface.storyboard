@@ -6,23 +6,64 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="PcT-of-bcr">
+        <!--Forecast-->
+        <scene sceneID="Vec-2h-0P0">
             <objects>
-                <controller id="tUO-h7-Y7W">
+                <controller identifier="Forecast" id="ZPy-Mv-t9F" customClass="ForeCastInterfaceController" customModule="CurelWatch_Extension">
                     <items>
-                        <label height="20" alignment="left" text="テスト" id="1g5-yR-mbc"/>
+                        <group width="1" alignment="left" id="cEz-pj-mNh">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="flame.fill" catalog="system" id="5QE-yG-UJ9">
+                                    <color key="tintColor" red="1" green="0.18683777404583912" blue="0.087479917345593683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <group alignment="left" layout="vertical" id="eSl-ZJ-7E4">
+                                    <items>
+                                        <label alignment="left" text="forecast" id="svk-OQ-gfh">
+                                            <color key="textColor" red="1" green="0.18683777404583912" blue="0.087479917345593683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label alignment="left" text="main" id="YcV-Y3-LVV"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="di0-25-ek8">
+                            <items>
+                                <label alignment="left" text="12456" id="yoE-jG-cMD"/>
+                                <label height="44" alignment="left" text="789" id="oEk-ZO-soJ">
+                                    <color key="textColor" red="1" green="0.2169449519834673" blue="0.20158429059082372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="45"/>
+                                </label>
+                                <label alignment="left" text="humidity" id="SY5-O6-H0w">
+                                    <color key="textColor" red="1" green="0.98200336384168696" blue="0.63645913986654723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <group width="1" alignment="left" id="yXv-mD-C6W">
+                                    <items>
+                                        <label alignment="left" text="Gte" id="ynd-54-dqt"/>
+                                        <label alignment="right" text="Seat" id="U1j-7d-jRa"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="descriLabel" destination="svk-OQ-gfh" id="q5M-dX-Fyw"/>
+                        <outlet property="humidityLabel" destination="yoE-jG-cMD" id="uai-UE-Gl5"/>
+                        <outlet property="mainLabel" destination="YcV-Y3-LVV" id="7Tg-Zs-vIM"/>
+                        <outlet property="pressureLabel" destination="SY5-O6-H0w" id="hVT-2k-2Ew"/>
+                        <outlet property="sealevelLabel" destination="oEk-ZO-soJ" id="kCS-6X-QgU"/>
+                        <outlet property="tempmaxLabel" destination="ynd-54-dqt" id="i95-kK-h5w"/>
+                        <outlet property="tempminLabel" destination="U1j-7d-jRa" id="jy4-5b-hrO"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="45"/>
+            <point key="canvasLocation" x="-114" y="345"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CurelWatch" customModuleProvider="target">
                     <items>
-                        <label width="136" height="36" alignment="left" text="文字が入力されていません。" numberOfLines="3" id="uOL-1R-azv"/>
                         <table alignment="left" id="GXL-FT-95n">
                             <items>
                                 <tableRow identifier="Row" id="AzC-eL-lVr" customClass="RowController" customModule="CurelWatch_Extension">
@@ -62,14 +103,12 @@
                                         <outlet property="CityLabel" destination="5aS-aX-Y3L" id="GDL-Sr-7Mt"/>
                                         <outlet property="dateLabel" destination="Z3F-ZK-EqX" id="nY9-T6-fHe"/>
                                         <outlet property="imageView" destination="4Hu-XD-fVb" id="MJo-aV-wRW"/>
-                                        <segue destination="tUO-h7-Y7W" kind="push" id="UWP-HZ-dxl"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
-                        <outlet property="label" destination="uOL-1R-azv" id="tmi-z0-9tf"/>
                         <outlet property="table" destination="GXL-FT-95n" id="YlM-SW-hxL"/>
                     </connections>
                 </controller>
@@ -109,6 +148,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="flame.fill" catalog="system" width="111" height="128"/>
         <image name="sun.min" catalog="system" width="128" height="121"/>
     </resources>
 </document>

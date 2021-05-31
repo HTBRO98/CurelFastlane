@@ -21,8 +21,6 @@ class InterfaceController: WKInterfaceController, NotifySetDataDelegate {
     
     @IBOutlet weak var table: WKInterfaceTable!
         
-    @IBOutlet weak var label: WKInterfaceLabel!
-    
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         model.delegate = self
@@ -56,6 +54,11 @@ class InterfaceController: WKInterfaceController, NotifySetDataDelegate {
             guard let controller = table.rowController(at: i) as? RowController else { continue }
             controller.data = (model.dataList[0].list[i], i)
         }
+    }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        let item = model.dataList[0].list[rowIndex]
+        presentController(withName: "Forecast", context: item)
     }
     
 }
