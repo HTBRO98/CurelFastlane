@@ -7,6 +7,7 @@
 
 import WatchKit
 import Foundation
+import AlamofireImage
 
 class ForeCastInterfaceController: WKInterfaceController {
 
@@ -18,6 +19,7 @@ class ForeCastInterfaceController: WKInterfaceController {
   @IBOutlet var pressureLabel: WKInterfaceLabel!
   @IBOutlet var sealevelLabel: WKInterfaceLabel!
 
+    @IBOutlet weak var imageView: WKInterfaceImage!
     var item: Forecast.List? {
     didSet {
       guard let item = item else { return }
@@ -32,6 +34,17 @@ class ForeCastInterfaceController: WKInterfaceController {
 
         pressureLabel.setText("気圧 \(item.main.pressure)")
         sealevelLabel.setText("海抜 \(item.main.sea_level)")
+        
+        let iPath = item.weather[0].icon
+        let iUrl = "https://openweathermap.org/img/wn/\(iPath)@2x.png"
+        let downloader = ImageDownloader()
+        let urlRequest = URLRequest(url: URL(string: iUrl)!)
+        downloader.download(urlRequest) { response in
+            debugPrint(response.result)
+            if case .success(let image) = response.result {
+                self.imageView.setImage(image)
+            }
+        }
     }
   }
 

@@ -49,6 +49,7 @@
                     <connections>
                         <outlet property="descriLabel" destination="svk-OQ-gfh" id="q5M-dX-Fyw"/>
                         <outlet property="humidityLabel" destination="yoE-jG-cMD" id="uai-UE-Gl5"/>
+                        <outlet property="imageView" destination="5QE-yG-UJ9" id="K81-pw-wJ5"/>
                         <outlet property="mainLabel" destination="YcV-Y3-LVV" id="7Tg-Zs-vIM"/>
                         <outlet property="pressureLabel" destination="SY5-O6-H0w" id="hVT-2k-2Ew"/>
                         <outlet property="sealevelLabel" destination="oEk-ZO-soJ" id="kCS-6X-QgU"/>
@@ -57,7 +58,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-114" y="345"/>
+            <point key="canvasLocation" x="-58" y="200"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">

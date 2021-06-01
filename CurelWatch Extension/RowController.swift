@@ -21,7 +21,6 @@ class RowController: NSObject {
             let iUrl = "https://openweathermap.org/img/wn/\(iPath)@2x.png"
             dateLabel.setText(data.0.weather[0].description)
             CityLabel.setText(data.0.weather[0].main)
-//            imageView.setImage(UIImage(systemName: "sun.min"))
             let downloader = ImageDownloader()
             let urlRequest = URLRequest(url: URL(string: iUrl)!)
             downloader.download(urlRequest) { response in

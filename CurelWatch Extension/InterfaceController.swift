@@ -14,7 +14,7 @@ protocol NotifySetDataDelegate {
 
 
 class InterfaceController: WKInterfaceController, NotifySetDataDelegate {
-    ///
+
     fileprivate let fetchProvider = FetchProvider()
     let query = "tokyo"
     let model = Model()
@@ -24,6 +24,12 @@ class InterfaceController: WKInterfaceController, NotifySetDataDelegate {
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         model.delegate = self
+        if model.dataList.count == 0 {
+            fetchProvider.fetchAPI(search: query, model: model)
+        } else {
+            model.dataList.removeAll()
+            fetchProvider.fetchAPI(search: query, model: model)
+        }
                         
     }
     
@@ -33,12 +39,6 @@ class InterfaceController: WKInterfaceController, NotifySetDataDelegate {
     }
     
     override func didAppear() {
-        if model.dataList.count == 0 {
-            fetchProvider.fetchAPI(search: query, model: model)
-        } else {
-            model.dataList.removeAll()
-            fetchProvider.fetchAPI(search: query, model: model)
-        }
         
     }
     
