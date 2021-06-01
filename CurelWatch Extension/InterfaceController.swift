@@ -14,7 +14,7 @@ protocol NotifySetDataDelegate {
 
 
 class InterfaceController: WKInterfaceController, NotifySetDataDelegate {
-    
+    ///
     fileprivate let fetchProvider = FetchProvider()
     let query = "tokyo"
     let model = Model()
