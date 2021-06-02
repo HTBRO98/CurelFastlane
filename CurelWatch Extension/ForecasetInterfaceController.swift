@@ -18,6 +18,8 @@ class ForeCastInterfaceController: WKInterfaceController {
   @IBOutlet var humidityLabel: WKInterfaceLabel!
   @IBOutlet var pressureLabel: WKInterfaceLabel!
   @IBOutlet var sealevelLabel: WKInterfaceLabel!
+    
+    let helper = Helper()
 
     @IBOutlet weak var imageView: WKInterfaceImage!
     var item: Forecast.List? {
@@ -26,14 +28,14 @@ class ForeCastInterfaceController: WKInterfaceController {
 
         descriLabel.setText("\(item.weather[0].description)")
         mainLabel.setText("\(item.weather[0].main)")
-        tempminLabel.setText("\(item.main.temp_min) 最低気温")
-        tempmaxLabel.setText("\(item.main.temp_max) 最高気温")
+        tempminLabel.setText("最低気温 \(helper.kelToCel(kelvin: item.main.temp_min))度")
+        tempmaxLabel.setText("最高気温 \(helper.kelToCel(kelvin: item.main.temp_max))度")
 
-        humidityLabel.setText("\(item.main.humidity) 湿度")
+        humidityLabel.setText("湿度 \(item.main.humidity)%")
         humidityLabel.setTextColor(.red)
 
-        pressureLabel.setText("気圧 \(item.main.pressure)")
-        sealevelLabel.setText("海抜 \(item.main.sea_level)")
+        pressureLabel.setText("気圧 \(item.main.pressure)hPa")
+        sealevelLabel.setText("風速 \(round(item.wind.speed))m/秒")
         
         let iPath = item.weather[0].icon
         let iUrl = "https://openweathermap.org/img/wn/\(iPath)@2x.png"

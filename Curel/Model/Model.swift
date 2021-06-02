@@ -27,13 +27,13 @@ struct Forecast: Codable {
     
     struct Main: Codable {
         let temp: Double
-        let feels_like: Double
-        let temp_min: Double
-        let temp_max: Double
-        let pressure: Int
-        let sea_level: Int
-        let grnd_level: Int
-        let humidity: Int
+        let feels_like: Double      //Temperature. Unit Default: Kelvin
+        let temp_min: Double        //Unit Default: Kelvin
+        let temp_max: Double        //Unit Default: Kelvin
+        let pressure: Int           //Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa
+        let sea_level: Int          //Atmospheric pressure on the sea level, hPa
+        let grnd_level: Int         //Atmospheric pressure on the ground level, hPa
+        let humidity: Int           //Humidity, %
         let temp_kf: Double
     }
     
