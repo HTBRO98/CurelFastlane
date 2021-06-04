@@ -21,7 +21,7 @@
                                         <label alignment="left" text="forecast" minimumScaleFactor="0.5" id="svk-OQ-gfh">
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </label>
-                                        <label alignment="left" text="main" id="YcV-Y3-LVV">
+                                        <label alignment="center" text="main" id="YcV-Y3-LVV">
                                             <color key="textColor" red="1" green="0.216944952" blue="0.20158429059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="font" type="system" pointSize="20"/>
                                         </label>
@@ -32,21 +32,22 @@
                         </group>
                         <group width="1" alignment="left" layout="vertical" id="di0-25-ek8">
                             <items>
-                                <label alignment="left" text="12456" id="yoE-jG-cMD"/>
+                                <label alignment="left" text="12456" id="yoE-jG-cMD">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
                                 <label height="34" alignment="left" text="789" id="oEk-ZO-soJ">
                                     <color key="textColor" red="1" green="0.2169449519834673" blue="0.20158429059082372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                    <fontDescription key="font" type="system" pointSize="23"/>
                                 </label>
-                                <label alignment="left" text="humidity" id="SY5-O6-H0w">
-                                    <color key="textColor" red="1" green="0.98200336384168696" blue="0.63645913986654723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </label>
-                                <group width="1" alignment="left" id="yXv-mD-C6W">
+                                <group width="1" alignment="left" layout="vertical" id="yXv-mD-C6W">
                                     <items>
-                                        <label alignment="left" text="Gte" numberOfLines="2" id="ynd-54-dqt">
-                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                        <label alignment="center" text="Gte" numberOfLines="2" id="ynd-54-dqt">
+                                            <color key="textColor" red="1" green="0.98200336379999997" blue="0.63645913990000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
                                         </label>
-                                        <label alignment="right" text="Seat" numberOfLines="2" id="U1j-7d-jRa">
-                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                        <label alignment="center" text="Seat" numberOfLines="2" id="U1j-7d-jRa">
+                                            <color key="textColor" red="1" green="0.98200336379999997" blue="0.63645913990000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
                                         </label>
                                     </items>
                                 </group>
@@ -58,7 +59,6 @@
                         <outlet property="humidityLabel" destination="yoE-jG-cMD" id="uai-UE-Gl5"/>
                         <outlet property="imageView" destination="5QE-yG-UJ9" id="K81-pw-wJ5"/>
                         <outlet property="mainLabel" destination="YcV-Y3-LVV" id="7Tg-Zs-vIM"/>
-                        <outlet property="pressureLabel" destination="SY5-O6-H0w" id="hVT-2k-2Ew"/>
                         <outlet property="sealevelLabel" destination="oEk-ZO-soJ" id="kCS-6X-QgU"/>
                         <outlet property="tempmaxLabel" destination="ynd-54-dqt" id="i95-kK-h5w"/>
                         <outlet property="tempminLabel" destination="U1j-7d-jRa" id="jy4-5b-hrO"/>

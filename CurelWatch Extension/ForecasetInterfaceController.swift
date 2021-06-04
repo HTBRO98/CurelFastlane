@@ -16,7 +16,6 @@ class ForeCastInterfaceController: WKInterfaceController {
   @IBOutlet var tempminLabel: WKInterfaceLabel!
   @IBOutlet var tempmaxLabel: WKInterfaceLabel!
   @IBOutlet var humidityLabel: WKInterfaceLabel!
-  @IBOutlet var pressureLabel: WKInterfaceLabel!
   @IBOutlet var sealevelLabel: WKInterfaceLabel!
     
     let helper = Helper()
@@ -33,8 +32,6 @@ class ForeCastInterfaceController: WKInterfaceController {
 
         humidityLabel.setText("湿度 \(item.main.humidity)%")
         humidityLabel.setTextColor(.red)
-
-        pressureLabel.setText("気圧 \(item.main.pressure)hPa")
         sealevelLabel.setText("風速 \(round(item.wind.speed))m/秒")
         
         let iPath = item.weather[0].icon
