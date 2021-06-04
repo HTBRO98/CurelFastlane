@@ -122,7 +122,6 @@ class Model {
     var dataList : [Forecast] = [] {
         didSet {
             delegate?.setModel()
-            print("デリゲート内のdataList.countは、　\(dataList.count)個です。")
         }
     }
 }

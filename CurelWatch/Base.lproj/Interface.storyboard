@@ -75,24 +75,24 @@
                         <table alignment="left" id="GXL-FT-95n">
                             <items>
                                 <tableRow identifier="Row" id="AzC-eL-lVr" customClass="RowController" customModule="CurelWatch_Extension">
-                                    <group key="rootItem" width="1" height="44" alignment="left" id="OSK-rR-8Cy">
+                                    <group key="rootItem" width="1" height="50" alignment="left" id="OSK-rR-8Cy">
                                         <items>
                                             <separator height="53" alignment="left" id="hIt-EI-TJH">
                                                 <color key="color" red="0.18253089559999999" green="0.80028553300000005" blue="0.47848897239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </separator>
-                                            <group width="72" height="42" alignment="left" layout="vertical" id="YEu-aC-0GW">
+                                            <group width="72" height="50" alignment="left" layout="vertical" id="YEu-aC-0GW">
                                                 <items>
                                                     <group width="68" alignment="left" id="aOu-Jz-eiS">
                                                         <items>
-                                                            <label width="42" alignment="center" verticalAlignment="center" text="日付" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.5" id="Z3F-ZK-EqX">
+                                                            <label width="60" height="20" alignment="center" verticalAlignment="center" text="日付" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.5" id="Z3F-ZK-EqX">
                                                                 <color key="textColor" red="0.18253089559999999" green="0.80028553300000005" blue="0.47848897239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                                                <fontDescription key="font" type="system" pointSize="8"/>
                                                             </label>
                                                         </items>
                                                     </group>
                                                     <group width="69" alignment="left" id="9MS-nr-EOA">
                                                         <items>
-                                                            <label width="45" height="25" alignment="center" verticalAlignment="center" text="都市" textAlignment="center" minimumScaleFactor="0.5" id="5aS-aX-Y3L">
+                                                            <label width="60" height="25" alignment="center" verticalAlignment="center" text="都市" textAlignment="center" minimumScaleFactor="0.5" id="5aS-aX-Y3L">
                                                                 <color key="textColor" red="0.51508518640000001" green="0.3709322793" blue="0.1291416279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </label>
                                                         </items>
