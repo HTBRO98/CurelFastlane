@@ -10,7 +10,28 @@ import WatchKit
 import CoreLocation
 import WatchConnectivity
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate, WCSessionDelegate {
+    
+    override init(){
+            super.init()
+            
+        if WCSession.isSupported(){
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+            print("ExtensionDelegate: WCSessin is Supported")
+        }
+    }
+    
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    }
+    
+    //func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+    //        guard let date = userInfo["number"] as? Int else { return }
+    //        print("receice\(date)")
+    //    }
+    
 
     let locationManager: CLLocationManager = CLLocationManager()
     var currentLocation = CLLocation()
@@ -31,6 +52,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegat
         }
         self.currentLocation = locations.first!
         let message = ["lat": self.currentLocation.coordinate.latitude,"long": self.currentLocation.coordinate.longitude]
+        WCSession.default.transferUserInfo(["number": 12345])
+        WCSession.default.sendMessage(["Message": "Hello world!"], replyHandler: nil, errorHandler: nil)
     //    WatchConnector.shared.sendMessage(message, withIdentifier: "sendCurrentLocation") { (error) in
     //        print("error in send message to watch\(error.localizedDescription)")
     //    }
@@ -38,8 +61,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegat
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-    print("Fail to load location")
-    print(error.localizedDescription)
+    print("Fail to load location \(error.localizedDescription)")
     }
 
     func applicationDidBecomeActive() {

@@ -7,12 +7,13 @@
 
 import WatchKit
 import CoreLocation
+import WatchConnectivity
 
 var currentLocation = CLLocation()
 var lat:Double = 0.0
 var long:Double = 0.0
 
-class LocationController: WKInterfaceController {
+class LocationController: WKInterfaceController, WCSessionDelegate {
     
     override func willActivate() {
     // This method is called when watch view controller is about to be visible to user
@@ -39,5 +40,32 @@ class LocationController: WKInterfaceController {
     //    self.lblLatitude.setText("\(self.lat)")
     //    self.lbllongitude.setText("\(self.long)")
     //}
+    
+    override init(){
+            super.init()
+            
+        if WCSession.isSupported(){
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+            print("LocationController ExtensionDelegate: WCSessin is Supported")
+        }
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("activationDidCompleteWith state= \(activationState.rawValue)")
+    }
+    
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+            guard let date = userInfo["number"] as? Int else { return }
+            print("receice\(date)")
+    }
+        
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+            guard let text = message["Message"] as? String
+                else {    return    }
+        print("message \(text)")
+    }
     
 }
