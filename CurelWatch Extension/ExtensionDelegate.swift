@@ -6,11 +6,40 @@
 //
 
 import WatchKit
+import WatchKit
+import CoreLocation
+import WatchConnectivity
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate {
 
+    let locationManager: CLLocationManager = CLLocationManager()
+    var currentLocation = CLLocation()
+    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestLocation()
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if locations.count == 0
+        {
+            return
+        }
+        self.currentLocation = locations.first!
+        let message = ["lat": self.currentLocation.coordinate.latitude,"long": self.currentLocation.coordinate.longitude]
+    //    WatchConnector.shared.sendMessage(message, withIdentifier: "sendCurrentLocation") { (error) in
+    //        print("error in send message to watch\(error.localizedDescription)")
+    //    }
+
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    print("Fail to load location")
+    print(error.localizedDescription)
     }
 
     func applicationDidBecomeActive() {
