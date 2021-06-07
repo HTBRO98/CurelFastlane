@@ -7,6 +7,7 @@
 
 import UIKit
 import PKHUD
+import WatchConnectivity
 
     /**
     アーキテクチャ：MVVM
@@ -29,7 +30,24 @@ import PKHUD
     workflowでSlackを追加（iOSではなく、All）→VariableにSlkack WEBhook URLを追加。variableには少し時間がかかる。
     */
 
-class ViewController: UIViewController , UITableViewDelegate {
+class ViewController: UIViewController , UITableViewDelegate, WCSessionDelegate {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("iOS activationDidCompleteWith state= \(activationState.rawValue)")
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("iOS sessionDidBecomeInactive")
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("iOS sessionDidDeactivate")
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        replyHandler(["reply" : "OK"])
+    }
+    
     
     fileprivate var apiButton = UIButton(frame: .zero)
     fileprivate var tableview = UITableView(frame: .zero, style: .insetGrouped)
@@ -40,11 +58,15 @@ class ViewController: UIViewController , UITableViewDelegate {
     let query = "tokyo"
     let model = Model()
     // TODO:写真を入れ替える
-    let image = UIImage(named: "noalpha.appicon_120")!
+    let image = UIImage(named: "noalpha.appicon_120")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if WCSession.isSupported() {
+            WCSession.default.delegate = self
+            WCSession.default.activate()
+        }
         setupApiButton()
         setupTableView()
         
@@ -52,6 +74,11 @@ class ViewController: UIViewController , UITableViewDelegate {
         self.navigationController!.navigationBar.shadowImage = UIImage()
         
         NotificationCenter.default.addObserver(self, selector: #selector(update(_:)), name: .WeatherNotification, object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        WatchConnectivity.WCSession.default.transferUserInfo(["number": 12345])
+        //WatchConnectivity.WCSession.default.sendMessage(["Message": "Hello world!"], replyHandler: nil, errorHandler: nil)
     }
     
 }
@@ -70,7 +97,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeCell
         cell.backgroundColor = UIColor(hex: color.cellBac, alpha: 1.0)
-        cell.setupMainContents(iPath: model.dataList[0].list[indexPath.row].weather[0].icon, plaseHolderImage: image, text: model.dataList[0].list[indexPath.row].weather[0].main)
+        cell.setupMainContents(iPath: model.dataList[0].list[indexPath.row].weather[0].icon, plaseHolderImage: image!, text: model.dataList[0].list[indexPath.row].weather[0].main)
         return cell
     }
     

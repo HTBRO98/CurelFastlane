@@ -48,12 +48,12 @@ class LocationController: WKInterfaceController, WCSessionDelegate {
             let session = WCSession.default
             session.delegate = self
             session.activate()
-            print("LocationController ExtensionDelegate: WCSessin is Supported")
+//            print("LocationController ExtensionDelegate: WCSessin is Supported")
         }
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        print("activationDidCompleteWith state= \(activationState.rawValue)")
+        print("Watch OS activationDidCompleteWith state= \(activationState.rawValue)")
     }
     
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {

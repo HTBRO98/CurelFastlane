@@ -10,62 +10,40 @@ import WatchKit
 import CoreLocation
 import WatchConnectivity
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate, WCSessionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, CLLocationManagerDelegate {
     
-    override init(){
-            super.init()
-            
-        if WCSession.isSupported(){
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-            print("ExtensionDelegate: WCSessin is Supported")
-        }
-    }
-    
-    
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-    }
-    
-    //func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
-    //        guard let date = userInfo["number"] as? Int else { return }
-    //        print("receice\(date)")
-    //    }
-    
-
-    let locationManager: CLLocationManager = CLLocationManager()
-    var currentLocation = CLLocation()
+//    let locationManager: CLLocationManager = CLLocationManager()
+//    var currentLocation = CLLocation()
     
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestLocation()
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.startUpdatingLocation()
+//        self.locationManager.delegate = self
+//        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        self.locationManager.requestLocation()
+//        self.locationManager.requestWhenInUseAuthorization()
+//        self.locationManager.startUpdatingLocation()
+        
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if locations.count == 0
-        {
-            return
-        }
-        self.currentLocation = locations.first!
-        let message = ["lat": self.currentLocation.coordinate.latitude,"long": self.currentLocation.coordinate.longitude]
-        WCSession.default.transferUserInfo(["number": 12345])
-        WCSession.default.sendMessage(["Message": "Hello world!"], replyHandler: nil, errorHandler: nil)
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        if locations.count == 0
+//        {
+//            return
+//        }
+//        self.currentLocation = locations.first!
+//        let message = ["lat": self.currentLocation.coordinate.latitude,"long": self.currentLocation.coordinate.longitude]
     //    WatchConnector.shared.sendMessage(message, withIdentifier: "sendCurrentLocation") { (error) in
     //        print("error in send message to watch\(error.localizedDescription)")
     //    }
 
-    }
+//    }
     
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-    print("Fail to load location \(error.localizedDescription)")
-    }
+//    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+//    print("Fail to load location \(error.localizedDescription)")
+//    }
 
     func applicationDidBecomeActive() {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface
     }
 
     func applicationWillResignActive() {
