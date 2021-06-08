@@ -76,11 +76,6 @@ class ViewController: UIViewController , UITableViewDelegate, WCSessionDelegate 
         NotificationCenter.default.addObserver(self, selector: #selector(update(_:)), name: .WeatherNotification, object: nil)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        WatchConnectivity.WCSession.default.transferUserInfo(["number": 12345])
-        //WatchConnectivity.WCSession.default.sendMessage(["Message": "Hello world!"], replyHandler: nil, errorHandler: nil)
-    }
-    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -115,9 +110,25 @@ extension ViewController: UITableViewDataSource {
         HUD.show(.progress)
         if model.dataList.count == 0 {
             fetchProvider.fetchAPI(search: query, model: model)
+            if WCSession.default.isReachable {
+                //WatchConnectivity.WCSession.default.transferUserInfo(["number": 12345]
+                //WatchConnectivity.WCSession.default.sendMessage(["Message": "Hello world!"], replyHandler: nil, errorHandler: nil)
+                WCSession.default.sendMessage(["Location": "tokyo"], replyHandler: nil) {
+                    error in
+                    print(error)
+                }
+            }
         } else {
             model.dataList.removeAll()
             fetchProvider.fetchAPI(search: query, model: model)
+            if WCSession.default.isReachable {
+                //WatchConnectivity.WCSession.default.transferUserInfo(["number": 12345]
+                //WatchConnectivity.WCSession.default.sendMessage(["Message": "Hello world!"], replyHandler: nil, errorHandler: nil)
+                WCSession.default.sendMessage(["Location": "tokyo"], replyHandler: nil) {
+                    error in
+                    print(error)
+                }
+            }
         }
         
     }

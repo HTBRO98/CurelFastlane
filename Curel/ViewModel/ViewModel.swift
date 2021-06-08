@@ -41,7 +41,7 @@ class FetchProvider {
         guard let data = data else { return }
         do {
             let data = try JSONDecoder().decode(Forecast.self, from: data)
-            print("jDecode: \(data)")
+            //print("jDecode: \(data)")
             model.dataList.append(data)
         } catch let error {
             print("jDecode error: \(error)")

@@ -63,9 +63,14 @@ class LocationController: WKInterfaceController, WCSessionDelegate {
         
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-            guard let text = message["Message"] as? String
-                else {    return    }
-        print("message \(text)")
+        print("didReceiveMessage: ")
+        DispatchQueue.main.async {
+            let text = message["Location"] as! String
+            print("message: \(text)")
+        }
+   //         guard let text = message["Message"] as? String
+   //             else {    return    }
+   //     print("message \(text)")
     }
     
 }
