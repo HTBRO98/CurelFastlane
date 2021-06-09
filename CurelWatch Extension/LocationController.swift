@@ -48,7 +48,7 @@ class LocationController: WKInterfaceController, WCSessionDelegate {
             let session = WCSession.default
             session.delegate = self
             session.activate()
-//            print("LocationController ExtensionDelegate: WCSessin is Supported")
+            print("LocationController ExtensionDelegate: WCSessin is Supported")
         }
     }
     
@@ -57,7 +57,7 @@ class LocationController: WKInterfaceController, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
-            guard let date = userInfo["number"] as? Int else { return }
+            guard let date = userInfo["Location"] as? String else { return }
             print("receice\(date)")
     }
         

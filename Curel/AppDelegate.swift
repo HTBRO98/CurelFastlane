@@ -6,15 +6,38 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 let screenWidth = UIScreen.main.bounds.size.width
 let screenHeight = UIScreen.main.bounds.size.height
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("iOS activationDidCompleteWith state= \(activationState.rawValue)")
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("iOS sessionDidBecomeInactive")
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("iOS sessionDidDeactivate")
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        replyHandler(["reply" : "OK"])
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if WCSession.isSupported() {
+            print("is Supported")
+            WCSession.default.delegate = self
+            WCSession.default.activate()
+        }
+        
         return true
     }
 

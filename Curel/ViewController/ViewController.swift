@@ -30,24 +30,7 @@ import WatchConnectivity
     workflowでSlackを追加（iOSではなく、All）→VariableにSlkack WEBhook URLを追加。variableには少し時間がかかる。
     */
 
-class ViewController: UIViewController , UITableViewDelegate, WCSessionDelegate {
-    
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        print("iOS activationDidCompleteWith state= \(activationState.rawValue)")
-    }
-    
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        print("iOS sessionDidBecomeInactive")
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        print("iOS sessionDidDeactivate")
-    }
-    
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        replyHandler(["reply" : "OK"])
-    }
-    
+class ViewController: UIViewController , UITableViewDelegate {
     
     fileprivate var apiButton = UIButton(frame: .zero)
     fileprivate var tableview = UITableView(frame: .zero, style: .insetGrouped)
@@ -63,10 +46,6 @@ class ViewController: UIViewController , UITableViewDelegate, WCSessionDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        if WCSession.isSupported() {
-            WCSession.default.delegate = self
-            WCSession.default.activate()
-        }
         setupApiButton()
         setupTableView()
         
@@ -110,13 +89,17 @@ extension ViewController: UITableViewDataSource {
         HUD.show(.progress)
         if model.dataList.count == 0 {
             fetchProvider.fetchAPI(search: query, model: model)
+            WCSession.default.transferUserInfo(["Location": "tokyo"])
             if WCSession.default.isReachable {
                 //WatchConnectivity.WCSession.default.transferUserInfo(["number": 12345]
                 //WatchConnectivity.WCSession.default.sendMessage(["Message": "Hello world!"], replyHandler: nil, errorHandler: nil)
+                print("apiAction WCSession enable)")
                 WCSession.default.sendMessage(["Location": "tokyo"], replyHandler: nil) {
                     error in
                     print(error)
                 }
+            } else {
+                print("apiAction WCSession unenable")
             }
         } else {
             model.dataList.removeAll()
