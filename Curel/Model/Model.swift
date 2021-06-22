@@ -118,7 +118,8 @@ class Model {
     let apiKey: String = "cdc976a8dbd650139d902d1369ac8840"
     
     // TODO:クエリを国名で英語に合わせる
-    let query = "tokyo"
+    let query = "london"
+    //"tokyo"
     
     var dataList : [Forecast] = [] {
         
