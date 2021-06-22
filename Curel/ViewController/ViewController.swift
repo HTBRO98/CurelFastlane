@@ -37,8 +37,6 @@ class ViewController: UIViewController , UITableViewDelegate {
     fileprivate let refreshControl = UIRefreshControl()
     fileprivate let fetchProvider = FetchProvider()
     fileprivate let color = Color()
-    // TODO:クエリを国名で英語に合わせる
-    let query = "tokyo"
     let model = Model()
     // TODO:写真を入れ替える
     let image = UIImage(named: "noalpha.appicon_120")
@@ -88,7 +86,7 @@ extension ViewController: UITableViewDataSource {
         print("Api通信ボタンをタップしました。")
         HUD.show(.progress)
         if model.dataList.count == 0 {
-            fetchProvider.fetchAPI(search: query, model: model)
+            fetchProvider.fetchAPI(search: model.query, model: model)
             WCSession.default.transferUserInfo(["Location": "tokyo"])
             if WCSession.default.isReachable {
                 //WatchConnectivity.WCSession.default.transferUserInfo(["number": 12345]
@@ -103,7 +101,7 @@ extension ViewController: UITableViewDataSource {
             }
         } else {
             model.dataList.removeAll()
-            fetchProvider.fetchAPI(search: query, model: model)
+            fetchProvider.fetchAPI(search: model.query, model: model)
             if WCSession.default.isReachable {
                 //WatchConnectivity.WCSession.default.transferUserInfo(["number": 12345]
                 //WatchConnectivity.WCSession.default.sendMessage(["Message": "Hello world!"], replyHandler: nil, errorHandler: nil)
