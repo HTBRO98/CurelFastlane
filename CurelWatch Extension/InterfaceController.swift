@@ -51,6 +51,7 @@ class InterfaceController: WKInterfaceController, NotifySetDataDelegate {
         table.setNumberOfRows(model.dataList[0].list.count, withRowType: "Row")
         
         for i in 0 ..< table.numberOfRows {
+            print("i \(table.numberOfRows)")
             guard let controller = table.rowController(at: i) as? RowController else { continue }
             controller.data = (model.dataList[0].list[i], i)
         }
