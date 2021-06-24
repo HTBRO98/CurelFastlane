@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Notification.Name {
-    static let WeatherNotification = Notification.Name("WeatherNotification")
-    static let RotateNotification = Notification.Name("RotateNotification")
-}
+//extension Notification.Name {
+//    static let WeatherNotification = Notification.Name("WeatherNotification")
+//    static let RotateNotification = Notification.Name("RotateNotification")
+//}

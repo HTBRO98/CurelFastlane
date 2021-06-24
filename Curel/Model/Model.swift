@@ -114,17 +114,17 @@ struct WeatherData: Codable {
     
 }
 
-class Model {
-    let apiKey: String = "cdc976a8dbd650139d902d1369ac8840"
+//class Model {
+//    let apiKey: String = "cdc976a8dbd650139d902d1369ac8840"
     
     // TODO:クエリを国名で英語に合わせる
-    let query = "london"
+//    let query = "london"
     //"tokyo"
     
-    var dataList : [Forecast] = [] {
+//    var dataList : [Forecast] = [] {
         
-        didSet {
-            NotificationCenter.default.post(name: .WeatherNotification, object: nil)
-        }
-    }
-}
+//        didSet {
+//            NotificationCenter.default.post(name: .WeatherNotification, object: nil)
+//        }
+//    }
+//}
