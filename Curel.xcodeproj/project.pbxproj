@@ -11,6 +11,7 @@
 		40563C6713DCCCAF2732FD19 /* Pods_CurelWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF6B287C9521516DFE57511 /* Pods_CurelWatch_Extension.framework */; };
 		4D0C46F12684B21600234E5E /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C46F02684B21600234E5E /* ShareModel.swift */; };
 		4D0C46F22684B21600234E5E /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C46F02684B21600234E5E /* ShareModel.swift */; };
+		4D0C47E626860AF500234E5E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C47E526860AF500234E5E /* Environment.swift */; };
 		4D301B3D2664FA6000DD7E6F /* ForecasetInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */; };
 		4D63942225F1A5FB00D1C715 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63942125F1A5FB00D1C715 /* Notification.swift */; };
 		4D6D3E8925F24E3000DFBB6A /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8825F24E3000DFBB6A /* Cell.swift */; };
@@ -117,6 +118,7 @@
 		3F960C62553D972BA251EDDD /* Pods-Curel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.debug.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.debug.xcconfig"; sourceTree = "<group>"; };
 		44DC7E32BED9D473DD09F9CF /* Pods_Curel_CurelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Curel_CurelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0C46F02684B21600234E5E /* ShareModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
+		4D0C47E526860AF500234E5E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecasetInterfaceController.swift; sourceTree = "<group>"; };
 		4D63942125F1A5FB00D1C715 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		4D6D3E8825F24E3000DFBB6A /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
@@ -226,6 +228,14 @@
 				4D0C46F02684B21600234E5E /* ShareModel.swift */,
 			);
 			path = Share;
+			sourceTree = "<group>";
+		};
+		4D0C47E426860ADC00234E5E /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				4D0C47E526860AF500234E5E /* Environment.swift */,
+			);
+			path = Env;
 			sourceTree = "<group>";
 		};
 		4D63942025F1A5CC00D1C715 /* Some */ = {
@@ -352,6 +362,7 @@
 		4DEC7E1B25EF95B200E2AB3F /* Curel */ = {
 			isa = PBXGroup;
 			children = (
+				4D0C47E426860ADC00234E5E /* Env */,
 				4D0C46EF2684B1A900234E5E /* Share */,
 				4DEC7E1C25EF95B200E2AB3F /* AppDelegate.swift */,
 				4DEC7E1E25EF95B200E2AB3F /* SceneDelegate.swift */,
@@ -823,6 +834,7 @@
 				4DCDDEB125EFC0F600920F52 /* DetailViewController.swift in Sources */,
 				4D6D3E8925F24E3000DFBB6A /* Cell.swift in Sources */,
 				4DEC7E1F25EF95B200E2AB3F /* SceneDelegate.swift in Sources */,
+				4D0C47E626860AF500234E5E /* Environment.swift in Sources */,
 				4DCDDEA325EF9A3600920F52 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -976,6 +988,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-D DEVELOP_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.develop.debug;
 				PRODUCT_NAME = "Curel Develop Debug";
 				SWIFT_VERSION = 5.0;
@@ -1159,6 +1172,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-D DEVELOP_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.release;
 				PRODUCT_NAME = "Curel Develop Release";
 				SWIFT_VERSION = 5.0;
@@ -1348,6 +1362,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-D STAGING_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.staging.debug;
 				PRODUCT_NAME = "Curel Staging Debug";
 				SWIFT_VERSION = 5.0;
@@ -1537,6 +1552,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-D PRODUCTION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.production.debug;
 				PRODUCT_NAME = "Curel Debug";
 				SWIFT_VERSION = 5.0;
@@ -1720,6 +1736,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-D STAGING_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.staging;
 				PRODUCT_NAME = "Curel Stagin Release";
 				SWIFT_VERSION = 5.0;
@@ -1903,6 +1920,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-D PRODUCTION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = HTBRO.Curel.production;
 				PRODUCT_NAME = Curel;
 				SWIFT_VERSION = 5.0;
