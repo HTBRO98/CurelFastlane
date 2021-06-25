@@ -44,6 +44,7 @@ class ViewController: UIViewController , UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        Environment.getFlavertype()
         setupApiButton()
         setupTableView()
         
