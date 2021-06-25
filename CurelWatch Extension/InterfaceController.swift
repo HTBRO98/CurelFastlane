@@ -8,9 +8,9 @@
 import WatchKit
 import Foundation
 
-//protocol NotifySetDataDelegate {
-//    func setModel()
-//}
+protocol NotifySetDataDelegate {
+    func setModel()
+}
 
 
 class InterfaceController: WKInterfaceController, NotifySetDataDelegate {
