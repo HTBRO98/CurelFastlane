@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4DDE9215260330410028D97E"
+               BuildableName = "CurelWatch.app"
+               BlueprintName = "CurelWatch"
+               ReferencedContainer = "container:Curel.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "4DEC7E1825EF95B200E2AB3F"
                BuildableName = "Curel.app"
                BlueprintName = "Curel"
@@ -23,45 +37,15 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Develop_Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DEC7E2E25EF95B500E2AB3F"
-               BuildableName = "CurelTests.xctest"
-               BlueprintName = "CurelTests"
-               ReferencedContainer = "container:Curel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DEC7E3925EF95B500E2AB3F"
-               BuildableName = "CurelUITests.xctest"
-               BlueprintName = "CurelUITests"
-               ReferencedContainer = "container:Curel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D6DA69825F4EDFF00BF63B3"
-               BuildableName = "CurelFaslaneUITests.xctest"
-               BlueprintName = "CurelFaslaneUITests"
-               ReferencedContainer = "container:Curel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Develop_Debug"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -69,20 +53,21 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      notificationPayloadFile = "CurelWatch Extension/PushNotificationPayload.apns">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4DEC7E1825EF95B200E2AB3F"
-            BuildableName = "Curel.app"
-            BlueprintName = "Curel"
+            BlueprintIdentifier = "4DDE9215260330410028D97E"
+            BuildableName = "CurelWatch.app"
+            BlueprintName = "CurelWatch"
             ReferencedContainer = "container:Curel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Develop_Release"
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -91,18 +76,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4DEC7E1825EF95B200E2AB3F"
-            BuildableName = "Curel.app"
-            BlueprintName = "Curel"
+            BlueprintIdentifier = "4DDE9215260330410028D97E"
+            BuildableName = "CurelWatch.app"
+            BlueprintName = "CurelWatch"
             ReferencedContainer = "container:Curel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Develop_Debug">
+      buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Production_Release"
+      buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
