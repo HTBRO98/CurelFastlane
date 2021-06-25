@@ -180,7 +180,43 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
 fi
+if [[ "$CONFIGURATION" == "Develop_Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-iOS/AlamofireImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
+fi
+if [[ "$CONFIGURATION" == "Develop_Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-iOS/AlamofireImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
+fi
+if [[ "$CONFIGURATION" == "Production_Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-iOS/AlamofireImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
+fi
+if [[ "$CONFIGURATION" == "Production_Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-iOS/AlamofireImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
+fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-iOS/AlamofireImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
+fi
+if [[ "$CONFIGURATION" == "Staging_Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-iOS/AlamofireImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework"
+fi
+if [[ "$CONFIGURATION" == "Staging_Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-iOS/AlamofireImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"

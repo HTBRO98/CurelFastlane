@@ -178,7 +178,31 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-watchOS/AlamofireImage.framework"
 fi
+if [[ "$CONFIGURATION" == "Develop_Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-watchOS/AlamofireImage.framework"
+fi
+if [[ "$CONFIGURATION" == "Develop_Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-watchOS/AlamofireImage.framework"
+fi
+if [[ "$CONFIGURATION" == "Production_Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-watchOS/AlamofireImage.framework"
+fi
+if [[ "$CONFIGURATION" == "Production_Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-watchOS/AlamofireImage.framework"
+fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-watchOS/AlamofireImage.framework"
+fi
+if [[ "$CONFIGURATION" == "Staging_Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-watchOS/AlamofireImage.framework"
+fi
+if [[ "$CONFIGURATION" == "Staging_Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AlamofireImage-watchOS/AlamofireImage.framework"
 fi

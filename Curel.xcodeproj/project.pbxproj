@@ -113,8 +113,15 @@
 
 /* Begin PBXFileReference section */
 		228DD8971AA24DA12F883660 /* Pods-CurelWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.release.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		25F325373D845B1F50FA0FF7 /* Pods-CurelWatch Extension.production_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.production_debug.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.production_debug.xcconfig"; sourceTree = "<group>"; };
+		25FE24D56BCB9529853AE714 /* Pods-Curel.staging_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.staging_release.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.staging_release.xcconfig"; sourceTree = "<group>"; };
+		29F32F13206F15E81790E01D /* Pods-Curel-CurelUITests.staging_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.staging_release.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.staging_release.xcconfig"; sourceTree = "<group>"; };
+		2F472A958BF1316049C2F1BE /* Pods-CurelTests.staging_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.staging_release.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.staging_release.xcconfig"; sourceTree = "<group>"; };
+		303535BC8EF3744687E0B1A9 /* Pods-Curel.staging_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.staging_debug.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.staging_debug.xcconfig"; sourceTree = "<group>"; };
 		3692F98389D769889DBEFADE /* Pods_Curel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Curel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		389F608BDB43D35E8CCFDA9F /* Pods-CurelWatch Extension.staging_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.staging_release.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.staging_release.xcconfig"; sourceTree = "<group>"; };
 		39B205581CA92F22C28D27CF /* Pods-Curel-CurelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.release.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3BA0EF88FA44E4A9100A6C25 /* Pods-Curel-CurelUITests.production_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.production_debug.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.production_debug.xcconfig"; sourceTree = "<group>"; };
 		3F960C62553D972BA251EDDD /* Pods-Curel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.debug.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.debug.xcconfig"; sourceTree = "<group>"; };
 		44DC7E32BED9D473DD09F9CF /* Pods_Curel_CurelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Curel_CurelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0C46F02684B21600234E5E /* ShareModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
@@ -163,13 +170,30 @@
 		4DEC7E3E25EF95B500E2AB3F /* CurelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurelUITests.swift; sourceTree = "<group>"; };
 		4DEC7E4025EF95B500E2AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DFBA21A25FB9357001B4889 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		556EF07C115991B3FE4F9FD8 /* Pods-Curel.develop_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.develop_debug.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.develop_debug.xcconfig"; sourceTree = "<group>"; };
+		5CE8CD8DFD70448F105DE573 /* Pods-CurelTests.develop_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.develop_release.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.develop_release.xcconfig"; sourceTree = "<group>"; };
+		5D22ED5AD7793E16B7980F9D /* Pods-CurelWatch Extension.develop_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.develop_release.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.develop_release.xcconfig"; sourceTree = "<group>"; };
+		6763B45285DB32C46464ADAE /* Pods-Curel-CurelUITests.staging_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.staging_debug.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.staging_debug.xcconfig"; sourceTree = "<group>"; };
+		67ABAF59C2AF76308163F03D /* Pods-Curel-CurelUITests.develop_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.develop_debug.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.develop_debug.xcconfig"; sourceTree = "<group>"; };
 		6F153EFC8B273DAEDD7CFB1E /* Pods-CurelWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.debug.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		6FF6B287C9521516DFE57511 /* Pods_CurelWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurelWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7936CB3612F56A35515B51E8 /* Pods-Curel.develop_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.develop_release.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.develop_release.xcconfig"; sourceTree = "<group>"; };
 		7D420D2E3D648E9754B661DA /* Pods_CurelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		819EED1D080212A37A1A8BEA /* Pods-Curel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.release.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.release.xcconfig"; sourceTree = "<group>"; };
+		81F6FDF71BB211F3A6DA3131 /* Pods-CurelWatch Extension.staging_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.staging_debug.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.staging_debug.xcconfig"; sourceTree = "<group>"; };
+		84CE4664D52108EB17B3CD36 /* Pods-Curel-CurelUITests.develop_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.develop_release.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.develop_release.xcconfig"; sourceTree = "<group>"; };
+		879C543118AC4674BF86684C /* Pods-CurelTests.production_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.production_debug.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.production_debug.xcconfig"; sourceTree = "<group>"; };
+		8A986BF541E9D0C0D970120F /* Pods-CurelWatch Extension.develop_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.develop_debug.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.develop_debug.xcconfig"; sourceTree = "<group>"; };
+		A2F6D9AE81075FF4CD98DAE5 /* Pods-Curel.production_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.production_debug.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.production_debug.xcconfig"; sourceTree = "<group>"; };
+		B19E6DFF27A5E21EF5C05320 /* Pods-CurelTests.production_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.production_release.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.production_release.xcconfig"; sourceTree = "<group>"; };
 		B53B7F948A388B7CF3660595 /* Pods-CurelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.release.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.release.xcconfig"; sourceTree = "<group>"; };
+		B643FCB8CB12B05E8AD369BF /* Pods-CurelWatch Extension.production_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelWatch Extension.production_release.xcconfig"; path = "Target Support Files/Pods-CurelWatch Extension/Pods-CurelWatch Extension.production_release.xcconfig"; sourceTree = "<group>"; };
 		BE13D7DC4537E5942129A635 /* Pods-CurelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.debug.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8FB93F2C7DEB7E9F3EF626 /* Pods-CurelTests.staging_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.staging_debug.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.staging_debug.xcconfig"; sourceTree = "<group>"; };
+		C06DF71E8474089E722B2B9A /* Pods-CurelTests.develop_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.develop_debug.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.develop_debug.xcconfig"; sourceTree = "<group>"; };
+		D60F61607C857B7EDE543493 /* Pods-Curel-CurelUITests.production_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.production_release.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.production_release.xcconfig"; sourceTree = "<group>"; };
 		D93419CBBE88C224217BD4AE /* Pods-Curel-CurelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel-CurelUITests.debug.xcconfig"; path = "Target Support Files/Pods-Curel-CurelUITests/Pods-Curel-CurelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1D52DB862D21D7F78192A85 /* Pods-Curel.production_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.production_release.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.production_release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,6 +431,30 @@
 				B53B7F948A388B7CF3660595 /* Pods-CurelTests.release.xcconfig */,
 				6F153EFC8B273DAEDD7CFB1E /* Pods-CurelWatch Extension.debug.xcconfig */,
 				228DD8971AA24DA12F883660 /* Pods-CurelWatch Extension.release.xcconfig */,
+				A2F6D9AE81075FF4CD98DAE5 /* Pods-Curel.production_debug.xcconfig */,
+				303535BC8EF3744687E0B1A9 /* Pods-Curel.staging_debug.xcconfig */,
+				556EF07C115991B3FE4F9FD8 /* Pods-Curel.develop_debug.xcconfig */,
+				E1D52DB862D21D7F78192A85 /* Pods-Curel.production_release.xcconfig */,
+				25FE24D56BCB9529853AE714 /* Pods-Curel.staging_release.xcconfig */,
+				7936CB3612F56A35515B51E8 /* Pods-Curel.develop_release.xcconfig */,
+				3BA0EF88FA44E4A9100A6C25 /* Pods-Curel-CurelUITests.production_debug.xcconfig */,
+				6763B45285DB32C46464ADAE /* Pods-Curel-CurelUITests.staging_debug.xcconfig */,
+				67ABAF59C2AF76308163F03D /* Pods-Curel-CurelUITests.develop_debug.xcconfig */,
+				D60F61607C857B7EDE543493 /* Pods-Curel-CurelUITests.production_release.xcconfig */,
+				29F32F13206F15E81790E01D /* Pods-Curel-CurelUITests.staging_release.xcconfig */,
+				84CE4664D52108EB17B3CD36 /* Pods-Curel-CurelUITests.develop_release.xcconfig */,
+				879C543118AC4674BF86684C /* Pods-CurelTests.production_debug.xcconfig */,
+				BF8FB93F2C7DEB7E9F3EF626 /* Pods-CurelTests.staging_debug.xcconfig */,
+				C06DF71E8474089E722B2B9A /* Pods-CurelTests.develop_debug.xcconfig */,
+				B19E6DFF27A5E21EF5C05320 /* Pods-CurelTests.production_release.xcconfig */,
+				2F472A958BF1316049C2F1BE /* Pods-CurelTests.staging_release.xcconfig */,
+				5CE8CD8DFD70448F105DE573 /* Pods-CurelTests.develop_release.xcconfig */,
+				25F325373D845B1F50FA0FF7 /* Pods-CurelWatch Extension.production_debug.xcconfig */,
+				81F6FDF71BB211F3A6DA3131 /* Pods-CurelWatch Extension.staging_debug.xcconfig */,
+				8A986BF541E9D0C0D970120F /* Pods-CurelWatch Extension.develop_debug.xcconfig */,
+				B643FCB8CB12B05E8AD369BF /* Pods-CurelWatch Extension.production_release.xcconfig */,
+				389F608BDB43D35E8CCFDA9F /* Pods-CurelWatch Extension.staging_release.xcconfig */,
+				5D22ED5AD7793E16B7980F9D /* Pods-CurelWatch Extension.develop_release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -976,7 +1024,7 @@
 		};
 		4D0C47062686039700234E5E /* Develop_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F960C62553D972BA251EDDD /* Pods-Curel.debug.xcconfig */;
+			baseConfigurationReference = 556EF07C115991B3FE4F9FD8 /* Pods-Curel.develop_debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -999,7 +1047,7 @@
 		};
 		4D0C47072686039700234E5E /* Develop_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE13D7DC4537E5942129A635 /* Pods-CurelTests.debug.xcconfig */;
+			baseConfigurationReference = C06DF71E8474089E722B2B9A /* Pods-CurelTests.develop_debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1022,7 +1070,7 @@
 		};
 		4D0C47082686039700234E5E /* Develop_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D93419CBBE88C224217BD4AE /* Pods-Curel-CurelUITests.debug.xcconfig */;
+			baseConfigurationReference = 67ABAF59C2AF76308163F03D /* Pods-Curel-CurelUITests.develop_debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1082,7 +1130,7 @@
 		};
 		4D0C470B2686039700234E5E /* Develop_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F153EFC8B273DAEDD7CFB1E /* Pods-CurelWatch Extension.debug.xcconfig */;
+			baseConfigurationReference = 8A986BF541E9D0C0D970120F /* Pods-CurelWatch Extension.develop_debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1160,7 +1208,7 @@
 		};
 		4D0C4714268603EC00234E5E /* Develop_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 819EED1D080212A37A1A8BEA /* Pods-Curel.release.xcconfig */;
+			baseConfigurationReference = 7936CB3612F56A35515B51E8 /* Pods-Curel.develop_release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1183,7 +1231,7 @@
 		};
 		4D0C4715268603EC00234E5E /* Develop_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B53B7F948A388B7CF3660595 /* Pods-CurelTests.release.xcconfig */;
+			baseConfigurationReference = 5CE8CD8DFD70448F105DE573 /* Pods-CurelTests.develop_release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1206,7 +1254,7 @@
 		};
 		4D0C4716268603EC00234E5E /* Develop_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39B205581CA92F22C28D27CF /* Pods-Curel-CurelUITests.release.xcconfig */;
+			baseConfigurationReference = 84CE4664D52108EB17B3CD36 /* Pods-Curel-CurelUITests.develop_release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1266,7 +1314,7 @@
 		};
 		4D0C4719268603EC00234E5E /* Develop_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 228DD8971AA24DA12F883660 /* Pods-CurelWatch Extension.release.xcconfig */;
+			baseConfigurationReference = 5D22ED5AD7793E16B7980F9D /* Pods-CurelWatch Extension.develop_release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1350,7 +1398,7 @@
 		};
 		4D0C471B268603FB00234E5E /* Staging_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F960C62553D972BA251EDDD /* Pods-Curel.debug.xcconfig */;
+			baseConfigurationReference = 303535BC8EF3744687E0B1A9 /* Pods-Curel.staging_debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1373,7 +1421,7 @@
 		};
 		4D0C471C268603FB00234E5E /* Staging_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE13D7DC4537E5942129A635 /* Pods-CurelTests.debug.xcconfig */;
+			baseConfigurationReference = BF8FB93F2C7DEB7E9F3EF626 /* Pods-CurelTests.staging_debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1396,7 +1444,7 @@
 		};
 		4D0C471D268603FB00234E5E /* Staging_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D93419CBBE88C224217BD4AE /* Pods-Curel-CurelUITests.debug.xcconfig */;
+			baseConfigurationReference = 6763B45285DB32C46464ADAE /* Pods-Curel-CurelUITests.staging_debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1456,7 +1504,7 @@
 		};
 		4D0C4720268603FB00234E5E /* Staging_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F153EFC8B273DAEDD7CFB1E /* Pods-CurelWatch Extension.debug.xcconfig */;
+			baseConfigurationReference = 81F6FDF71BB211F3A6DA3131 /* Pods-CurelWatch Extension.staging_debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1540,7 +1588,7 @@
 		};
 		4D0C47222686043500234E5E /* Production_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F960C62553D972BA251EDDD /* Pods-Curel.debug.xcconfig */;
+			baseConfigurationReference = A2F6D9AE81075FF4CD98DAE5 /* Pods-Curel.production_debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1563,7 +1611,7 @@
 		};
 		4D0C47232686043500234E5E /* Production_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE13D7DC4537E5942129A635 /* Pods-CurelTests.debug.xcconfig */;
+			baseConfigurationReference = 879C543118AC4674BF86684C /* Pods-CurelTests.production_debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1586,7 +1634,7 @@
 		};
 		4D0C47242686043500234E5E /* Production_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D93419CBBE88C224217BD4AE /* Pods-Curel-CurelUITests.debug.xcconfig */;
+			baseConfigurationReference = 3BA0EF88FA44E4A9100A6C25 /* Pods-Curel-CurelUITests.production_debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1646,7 +1694,7 @@
 		};
 		4D0C47272686043500234E5E /* Production_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F153EFC8B273DAEDD7CFB1E /* Pods-CurelWatch Extension.debug.xcconfig */;
+			baseConfigurationReference = 25F325373D845B1F50FA0FF7 /* Pods-CurelWatch Extension.production_debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1724,7 +1772,7 @@
 		};
 		4D0C47292686044F00234E5E /* Staging_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 819EED1D080212A37A1A8BEA /* Pods-Curel.release.xcconfig */;
+			baseConfigurationReference = 25FE24D56BCB9529853AE714 /* Pods-Curel.staging_release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1747,7 +1795,7 @@
 		};
 		4D0C472A2686044F00234E5E /* Staging_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B53B7F948A388B7CF3660595 /* Pods-CurelTests.release.xcconfig */;
+			baseConfigurationReference = 2F472A958BF1316049C2F1BE /* Pods-CurelTests.staging_release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1770,7 +1818,7 @@
 		};
 		4D0C472B2686044F00234E5E /* Staging_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39B205581CA92F22C28D27CF /* Pods-Curel-CurelUITests.release.xcconfig */;
+			baseConfigurationReference = 29F32F13206F15E81790E01D /* Pods-Curel-CurelUITests.staging_release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1830,7 +1878,7 @@
 		};
 		4D0C472E2686044F00234E5E /* Staging_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 228DD8971AA24DA12F883660 /* Pods-CurelWatch Extension.release.xcconfig */;
+			baseConfigurationReference = 389F608BDB43D35E8CCFDA9F /* Pods-CurelWatch Extension.staging_release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1908,7 +1956,7 @@
 		};
 		4D0C47302686045C00234E5E /* Production_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 819EED1D080212A37A1A8BEA /* Pods-Curel.release.xcconfig */;
+			baseConfigurationReference = E1D52DB862D21D7F78192A85 /* Pods-Curel.production_release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1931,7 +1979,7 @@
 		};
 		4D0C47312686045C00234E5E /* Production_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B53B7F948A388B7CF3660595 /* Pods-CurelTests.release.xcconfig */;
+			baseConfigurationReference = B19E6DFF27A5E21EF5C05320 /* Pods-CurelTests.production_release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1954,7 +2002,7 @@
 		};
 		4D0C47322686045C00234E5E /* Production_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39B205581CA92F22C28D27CF /* Pods-Curel-CurelUITests.release.xcconfig */;
+			baseConfigurationReference = D60F61607C857B7EDE543493 /* Pods-Curel-CurelUITests.production_release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2014,7 +2062,7 @@
 		};
 		4D0C47352686045C00234E5E /* Production_Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 228DD8971AA24DA12F883660 /* Pods-CurelWatch Extension.release.xcconfig */;
+			baseConfigurationReference = B643FCB8CB12B05E8AD369BF /* Pods-CurelWatch Extension.production_release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
