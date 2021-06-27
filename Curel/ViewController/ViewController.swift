@@ -44,6 +44,13 @@ class ViewController: UIViewController , UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let env = ProcessInfo.processInfo.environment
+        if let key = env["OPEN_WEATHER_KEY"] {
+            model.apiKey = key
+        } else {
+            print("環境変数に値がありません。")
+        }
+        
         Environment.getFlavertype()
         setupApiButton()
         setupTableView()

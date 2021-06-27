@@ -44,6 +44,9 @@
 		4DEC7E2925EF95B500E2AB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEC7E2725EF95B500E2AB3F /* LaunchScreen.storyboard */; };
 		4DEC7E3425EF95B500E2AB3F /* CurelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC7E3325EF95B500E2AB3F /* CurelTests.swift */; };
 		4DEC7E3F25EF95B500E2AB3F /* CurelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC7E3E25EF95B500E2AB3F /* CurelUITests.swift */; };
+		4DF8B87F2688A94100443BF0 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8B87E2688A94100443BF0 /* .env */; };
+		4DF8B8872688A97F00443BF0 /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8B8862688A97F00443BF0 /* .env.sample */; };
+		4DF8B88F2688B16F00443BF0 /* ApiKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8B88E2688B16F00443BF0 /* ApiKeyManager.swift */; };
 		50068784005847C31B764BD2 /* Pods_CurelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D420D2E3D648E9754B661DA /* Pods_CurelTests.framework */; };
 		FA42B0A169FBA101293F93B1 /* Pods_Curel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3692F98389D769889DBEFADE /* Pods_Curel.framework */; };
 /* End PBXBuildFile section */
@@ -169,6 +172,9 @@
 		4DEC7E3A25EF95B500E2AB3F /* CurelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEC7E3E25EF95B500E2AB3F /* CurelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurelUITests.swift; sourceTree = "<group>"; };
 		4DEC7E4025EF95B500E2AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF8B87E2688A94100443BF0 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
+		4DF8B8862688A97F00443BF0 /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
+		4DF8B88E2688B16F00443BF0 /* ApiKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyManager.swift; sourceTree = "<group>"; };
 		4DFBA21A25FB9357001B4889 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		556EF07C115991B3FE4F9FD8 /* Pods-Curel.develop_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curel.develop_debug.xcconfig"; path = "Target Support Files/Pods-Curel/Pods-Curel.develop_debug.xcconfig"; sourceTree = "<group>"; };
 		5CE8CD8DFD70448F105DE573 /* Pods-CurelTests.develop_release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurelTests.develop_release.xcconfig"; path = "Target Support Files/Pods-CurelTests/Pods-CurelTests.develop_release.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +273,7 @@
 			children = (
 				4D63942125F1A5FB00D1C715 /* Notification.swift */,
 				4D6DA65425F46EFD00BF63B3 /* UIColorEx.swift */,
+				4DF8B88E2688B16F00443BF0 /* ApiKeyManager.swift */,
 			);
 			path = Some;
 			sourceTree = "<group>";
@@ -398,6 +405,8 @@
 				4DEC7E2525EF95B500E2AB3F /* Assets.xcassets */,
 				4DEC7E2725EF95B500E2AB3F /* LaunchScreen.storyboard */,
 				4DEC7E2A25EF95B500E2AB3F /* Info.plist */,
+				4DF8B87E2688A94100443BF0 /* .env */,
+				4DF8B8862688A97F00443BF0 /* .env.sample */,
 			);
 			path = Curel;
 			sourceTree = "<group>";
@@ -676,9 +685,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF8B87F2688A94100443BF0 /* .env in Resources */,
 				4DEC7E2925EF95B500E2AB3F /* LaunchScreen.storyboard in Resources */,
 				4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */,
 				4DEC7E2625EF95B500E2AB3F /* Assets.xcassets in Resources */,
+				4DF8B8872688A97F00443BF0 /* .env.sample in Resources */,
 				4DEC7E2425EF95B200E2AB3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,6 +888,7 @@
 				4DEC7E2125EF95B200E2AB3F /* ViewController.swift in Sources */,
 				4DEC7E1D25EF95B200E2AB3F /* AppDelegate.swift in Sources */,
 				4D0C46F12684B21600234E5E /* ShareModel.swift in Sources */,
+				4DF8B88F2688B16F00443BF0 /* ApiKeyManager.swift in Sources */,
 				4D6DA65525F46EFD00BF63B3 /* UIColorEx.swift in Sources */,
 				4D63942225F1A5FB00D1C715 /* Notification.swift in Sources */,
 				4DCDDEB125EFC0F600920F52 /* DetailViewController.swift in Sources */,

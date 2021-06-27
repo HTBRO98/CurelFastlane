@@ -117,7 +117,7 @@ import Foundation
 
 //共通
 //class Model {
-//    let apiKey: String = "cdc976a8dbd650139d902d1369ac8840"
+//    let apiKey: String = ""
     
     // TODO:クエリを国名で英語に合わせる
 //    let query = "london"
