@@ -38,19 +38,14 @@ class ViewController: UIViewController , UITableViewDelegate {
     fileprivate let fetchProvider = FetchProvider()
     fileprivate let color = Color()
     let model = Model()
+    let APIKeyManager = localApiKeyManager()
     // TODO:写真を入れ替える
     let image = UIImage(named: "noalpha.appicon_120")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let env = ProcessInfo.processInfo.environment
-        if let key = env["OPEN_WEATHER_KEY"] {
-            model.apiKey = key
-        } else {
-            print("環境変数に値がありません。")
-        }
-        
+        APIKeyManager.getAPIKeyLocal()
         Environment.getFlavertype()
         setupApiButton()
         setupTableView()

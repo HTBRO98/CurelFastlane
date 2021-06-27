@@ -14,6 +14,8 @@ let screenHeight = UIScreen.main.bounds.size.height
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     
+    let APIKeyManager = localApiKeyManager()
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("iOS activationDidCompleteWith state= \(activationState.rawValue)")
     }
@@ -38,25 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
             WCSession.default.activate()
         }
         
-        guard let path = Bundle.main.path(forResource: ".env", ofType: nil) else {
-                    fatalError("Not found: '/path/to/.env'.\nPlease create .env file reference from .env.sample")
-                }
-                let url = URL(fileURLWithPath: path)
-                do {
-                    let data = try Data(contentsOf: url)
-                    let str = String(data: data, encoding: .utf8) ?? "Empty File"
-                    let clean = str.replacingOccurrences(of: "\"", with: "").replacingOccurrences(of: "'", with: "")
-                    let envVars = clean.components(separatedBy:"\n")
-                    for envVar in envVars {
-                        let keyVal = envVar.components(separatedBy:"=")
-                        if keyVal.count == 2 {
-                            setenv(keyVal[0], keyVal[1], 1)
-                        }
-                    }
-                } catch {
-                    fatalError(error.localizedDescription)
-                }
-        
+        APIKeyManager.getAPIKeyLocal()
         
         return true
     }
