@@ -14,7 +14,7 @@
 		4D0C47E626860AF500234E5E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C47E526860AF500234E5E /* Environment.swift */; };
 		4D301B3D2664FA6000DD7E6F /* ForecasetInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */; };
 		4D60A104268A0111003F15BF /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A103268A0111003F15BF /* .env.sample */; };
-		4D60A128268A0326003F15BF /* .env in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A127268A0326003F15BF /* .env */; };
+		4D60A130268A074A003F15BF /* .env in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A12F268A074A003F15BF /* .env */; };
 		4D63942225F1A5FB00D1C715 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63942125F1A5FB00D1C715 /* Notification.swift */; };
 		4D6D3E8925F24E3000DFBB6A /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8825F24E3000DFBB6A /* Cell.swift */; };
 		4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */; };
@@ -132,7 +132,7 @@
 		4D0C47E526860AF500234E5E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecasetInterfaceController.swift; sourceTree = "<group>"; };
 		4D60A103268A0111003F15BF /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
-		4D60A127268A0326003F15BF /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
+		4D60A12F268A074A003F15BF /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		4D63942125F1A5FB00D1C715 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		4D6D3E8825F24E3000DFBB6A /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -409,7 +409,7 @@
 				4DEC7E2725EF95B500E2AB3F /* LaunchScreen.storyboard */,
 				4DEC7E2A25EF95B500E2AB3F /* Info.plist */,
 				4DF8B8862688A97F00443BF0 /* .env.sample */,
-				4D60A127268A0326003F15BF /* .env */,
+				4D60A12F268A074A003F15BF /* .env */,
 			);
 			path = Curel;
 			sourceTree = "<group>";
@@ -692,7 +692,7 @@
 				4DEC7E2925EF95B500E2AB3F /* LaunchScreen.storyboard in Resources */,
 				4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */,
 				4DEC7E2625EF95B500E2AB3F /* Assets.xcassets in Resources */,
-				4D60A128268A0326003F15BF /* .env in Resources */,
+				4D60A130268A074A003F15BF /* .env in Resources */,
 				4DF8B8872688A97F00443BF0 /* .env.sample in Resources */,
 				4DEC7E2425EF95B200E2AB3F /* Main.storyboard in Resources */,
 			);
