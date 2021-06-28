@@ -46,6 +46,7 @@ class ViewController: UIViewController , UITableViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         APIKeyManager.getAPIKeyLocal()
+        APIKeyManager.setAPIKeyLocal(model: model)
         Environment.getFlavertype()
         setupApiButton()
         setupTableView()

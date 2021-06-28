@@ -33,6 +33,7 @@ class localApiKeyManager {
     func setAPIKeyLocal(model: Model) {
         let env = ProcessInfo.processInfo.environment
         if let key = env["OPEN_WEATHER_KEY"] {
+            print("環境変数の値がセットされました。")
             model.apiKey = key
         } else {
             print("環境変数に値がありません。")
