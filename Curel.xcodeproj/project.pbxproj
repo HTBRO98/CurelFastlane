@@ -13,6 +13,8 @@
 		4D0C46F22684B21600234E5E /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C46F02684B21600234E5E /* ShareModel.swift */; };
 		4D0C47E626860AF500234E5E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C47E526860AF500234E5E /* Environment.swift */; };
 		4D301B3D2664FA6000DD7E6F /* ForecasetInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */; };
+		4D60A104268A0111003F15BF /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A103268A0111003F15BF /* .env.sample */; };
+		4D60A10C268A012A003F15BF /* .env in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A10B268A012A003F15BF /* .env */; };
 		4D63942225F1A5FB00D1C715 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63942125F1A5FB00D1C715 /* Notification.swift */; };
 		4D6D3E8925F24E3000DFBB6A /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8825F24E3000DFBB6A /* Cell.swift */; };
 		4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */; };
@@ -130,6 +132,8 @@
 		4D0C46F02684B21600234E5E /* ShareModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
 		4D0C47E526860AF500234E5E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecasetInterfaceController.swift; sourceTree = "<group>"; };
+		4D60A103268A0111003F15BF /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
+		4D60A10B268A012A003F15BF /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		4D63942125F1A5FB00D1C715 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		4D6D3E8825F24E3000DFBB6A /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -357,6 +361,8 @@
 				4DDE922F260330490028D97E /* Assets.xcassets */,
 				4DDE9231260330490028D97E /* Info.plist */,
 				4DDE9232260330490028D97E /* PushNotificationPayload.apns */,
+				4D60A103268A0111003F15BF /* .env.sample */,
+				4D60A10B268A012A003F15BF /* .env */,
 			);
 			path = "CurelWatch Extension";
 			sourceTree = "<group>";
@@ -677,6 +683,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D60A10C268A012A003F15BF /* .env in Resources */,
+				4D60A104268A0111003F15BF /* .env.sample in Resources */,
 				4DDE9230260330490028D97E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
