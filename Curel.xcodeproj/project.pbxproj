@@ -14,7 +14,7 @@
 		4D0C47E626860AF500234E5E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C47E526860AF500234E5E /* Environment.swift */; };
 		4D301B3D2664FA6000DD7E6F /* ForecasetInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */; };
 		4D60A104268A0111003F15BF /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A103268A0111003F15BF /* .env.sample */; };
-		4D60A10C268A012A003F15BF /* .env in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A10B268A012A003F15BF /* .env */; };
+		4D60A128268A0326003F15BF /* .env in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A127268A0326003F15BF /* .env */; };
 		4D63942225F1A5FB00D1C715 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63942125F1A5FB00D1C715 /* Notification.swift */; };
 		4D6D3E8925F24E3000DFBB6A /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8825F24E3000DFBB6A /* Cell.swift */; };
 		4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */; };
@@ -46,7 +46,6 @@
 		4DEC7E2925EF95B500E2AB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEC7E2725EF95B500E2AB3F /* LaunchScreen.storyboard */; };
 		4DEC7E3425EF95B500E2AB3F /* CurelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC7E3325EF95B500E2AB3F /* CurelTests.swift */; };
 		4DEC7E3F25EF95B500E2AB3F /* CurelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC7E3E25EF95B500E2AB3F /* CurelUITests.swift */; };
-		4DF8B87F2688A94100443BF0 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8B87E2688A94100443BF0 /* .env */; };
 		4DF8B8872688A97F00443BF0 /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8B8862688A97F00443BF0 /* .env.sample */; };
 		4DF8B88F2688B16F00443BF0 /* ApiKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8B88E2688B16F00443BF0 /* ApiKeyManager.swift */; };
 		50068784005847C31B764BD2 /* Pods_CurelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D420D2E3D648E9754B661DA /* Pods_CurelTests.framework */; };
@@ -133,7 +132,7 @@
 		4D0C47E526860AF500234E5E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecasetInterfaceController.swift; sourceTree = "<group>"; };
 		4D60A103268A0111003F15BF /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
-		4D60A10B268A012A003F15BF /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
+		4D60A127268A0326003F15BF /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		4D63942125F1A5FB00D1C715 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		4D6D3E8825F24E3000DFBB6A /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		4D6D3E8D25F261B600DFBB6A /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -176,7 +175,6 @@
 		4DEC7E3A25EF95B500E2AB3F /* CurelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEC7E3E25EF95B500E2AB3F /* CurelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurelUITests.swift; sourceTree = "<group>"; };
 		4DEC7E4025EF95B500E2AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DF8B87E2688A94100443BF0 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		4DF8B8862688A97F00443BF0 /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
 		4DF8B88E2688B16F00443BF0 /* ApiKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyManager.swift; sourceTree = "<group>"; };
 		4DFBA21A25FB9357001B4889 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -362,7 +360,6 @@
 				4DDE9231260330490028D97E /* Info.plist */,
 				4DDE9232260330490028D97E /* PushNotificationPayload.apns */,
 				4D60A103268A0111003F15BF /* .env.sample */,
-				4D60A10B268A012A003F15BF /* .env */,
 			);
 			path = "CurelWatch Extension";
 			sourceTree = "<group>";
@@ -411,8 +408,8 @@
 				4DEC7E2525EF95B500E2AB3F /* Assets.xcassets */,
 				4DEC7E2725EF95B500E2AB3F /* LaunchScreen.storyboard */,
 				4DEC7E2A25EF95B500E2AB3F /* Info.plist */,
-				4DF8B87E2688A94100443BF0 /* .env */,
 				4DF8B8862688A97F00443BF0 /* .env.sample */,
+				4D60A127268A0326003F15BF /* .env */,
 			);
 			path = Curel;
 			sourceTree = "<group>";
@@ -683,7 +680,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D60A10C268A012A003F15BF /* .env in Resources */,
 				4D60A104268A0111003F15BF /* .env.sample in Resources */,
 				4DDE9230260330490028D97E /* Assets.xcassets in Resources */,
 			);
@@ -693,10 +689,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF8B87F2688A94100443BF0 /* .env in Resources */,
 				4DEC7E2925EF95B500E2AB3F /* LaunchScreen.storyboard in Resources */,
 				4D6D3E8E25F261B600DFBB6A /* HomeCell.xib in Resources */,
 				4DEC7E2625EF95B500E2AB3F /* Assets.xcassets in Resources */,
+				4D60A128268A0326003F15BF /* .env in Resources */,
 				4DF8B8872688A97F00443BF0 /* .env.sample in Resources */,
 				4DEC7E2425EF95B200E2AB3F /* Main.storyboard in Resources */,
 			);
