@@ -22,7 +22,6 @@ class Environment {
     
     static func getFlavertype() -> FlaverType {
         #if DEVELOP_DEBUG
-        print("if DEVELOP_DEBUG が作動したぜーー")
         return .develop
         #elseif DEVELOP_REALSE
         return .develop
