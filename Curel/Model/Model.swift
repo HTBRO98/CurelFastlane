@@ -64,7 +64,6 @@ class Model {
     
     // TODO:クエリを国名で英語に合わせる
     //UI:PickerViewやDiffabledatasource
-    //queryの国名をopenweatherで調べる
     let query = "london"
     //"tokyo"
     
