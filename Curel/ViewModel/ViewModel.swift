@@ -12,11 +12,6 @@ import AlamofireImage
 class FetchProvider {
     
     func fetchAPI(search: String, model: Model) {
-        // TODO:apiのurlを合わせる search: tokyo
-        // TODO:OpenWeathermap Current weather dataのWeb API
-        //"https://api.openweathermap.org/data/2.5/weather?q=london&appid=cdc976a8dbd650139d902d1369ac8840"
-        //今の天気
-//        let baseUrl = "https://api.openweathermap.org/data/2.5/weather?q=\(search)&appid=\(model.apiKey)"
         //天気予報
         let baseUrl = "https://api.openweathermap.org/data/2.5/forecast?q=\(search)&appid=\(model.apiKey)"
         let parameters: [String: Any] = [:]
