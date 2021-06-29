@@ -64,6 +64,7 @@ class Model {
     
     // TODO:クエリを国名で英語に合わせる
     //UI:PickerViewやDiffabledatasource
+    //Cityidのquery方法を調べる
     let query = "london"
     //"tokyo"
     
