@@ -63,6 +63,7 @@ class Model {
     var apiKey: String = ""
     
     // TODO:クエリを国名で英語に合わせる
+    //UI:PickerViewやDiffabledatasource
     let query = "london"
     //"tokyo"
     
