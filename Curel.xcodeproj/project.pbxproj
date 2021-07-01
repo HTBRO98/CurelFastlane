@@ -12,6 +12,7 @@
 		4D0C46F12684B21600234E5E /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C46F02684B21600234E5E /* ShareModel.swift */; };
 		4D0C46F22684B21600234E5E /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C46F02684B21600234E5E /* ShareModel.swift */; };
 		4D0C47E626860AF500234E5E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C47E526860AF500234E5E /* Environment.swift */; };
+		4D2BEA44268DD9CE006F7322 /* citylist.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D2BEA43268DD9CE006F7322 /* citylist.json */; };
 		4D301B3D2664FA6000DD7E6F /* ForecasetInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */; };
 		4D60A104268A0111003F15BF /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A103268A0111003F15BF /* .env.sample */; };
 		4D60A144268A0BE0003F15BF /* .env in Resources */ = {isa = PBXBuildFile; fileRef = 4D60A143268A0BE0003F15BF /* .env */; };
@@ -131,6 +132,7 @@
 		44DC7E32BED9D473DD09F9CF /* Pods_Curel_CurelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Curel_CurelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0C46F02684B21600234E5E /* ShareModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
 		4D0C47E526860AF500234E5E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		4D2BEA43268DD9CE006F7322 /* citylist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = citylist.json; sourceTree = "<group>"; };
 		4D301B3C2664FA6000DD7E6F /* ForecasetInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecasetInterfaceController.swift; sourceTree = "<group>"; };
 		4D60A103268A0111003F15BF /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
 		4D60A143268A0BE0003F15BF /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				4D0C47E526860AF500234E5E /* Environment.swift */,
+				4D2BEA43268DD9CE006F7322 /* citylist.json */,
 			);
 			path = Env;
 			sourceTree = "<group>";
@@ -699,6 +702,7 @@
 				4D60A144268A0BE0003F15BF /* .env in Resources */,
 				4DF8B8872688A97F00443BF0 /* .env.sample in Resources */,
 				4DEC7E2425EF95B200E2AB3F /* Main.storyboard in Resources */,
+				4D2BEA44268DD9CE006F7322 /* citylist.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
